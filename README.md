@@ -1,9 +1,4 @@
-# TChefs Culinary Institute Website
-
-The project is designed to showcase culinary programs, attract prospective students, and provide a premium user experience across all devices.
-
----
-
+# TChefs Culinary Institute 
 # Project Overview
 
 TChefs Culinary Institute Website is a modern educational platform that promotes culinary training programs, student success stories, admissions information, and institutional services.
