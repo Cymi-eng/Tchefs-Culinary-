@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TChefs Culinary Institute</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A2E5D",
+              secondary: "#123F7A",
+              accent: "#E31B23",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- TOP BAR -->
+
+    <div class="bg-primary text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center py-3 text-sm">
+          <div class="hidden md:flex gap-6">
+            <span>
+              <i class="fas fa-phone"></i>
+              +254 700 123 456
+            </span>
+
+            <span>
+              <i class="fas fa-envelope"></i>
+              info@tchefs.ac.ke
+            </span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center h-20">
+          <div>
+            <h1 class="text-4xl font-bold text-primary">TChefs</h1>
+
+            <p class="text-xs text-accent">Culinary Institute</p>
+          </div>
+
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button
+            class="hidden lg:block bg-accent text-white px-6 py-3 rounded-lg"
+          >
+            Apply Now
+          </button>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden pb-6">
+          <ul class="flex flex-col gap-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li>
+              <button class="bg-accent text-white w-full py-3 rounded-lg">
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="relative min-h-screen flex items-center">
+      <img
+        src=""
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-3xl text-white">
+          <h4 class="text-red-500 text-xl mb-4">
+            Professional Culinary Education
+          </h4>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
+            BECOME A
+
+            <span class="block text-red-500"> PROFESSIONAL CHEF </span>
+          </h1>
+
+          <p class="mt-6 text-lg md:text-xl text-gray-200">
+            Master culinary arts, pastry & bakery, food production and
+            hospitality management.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <button class="bg-accent px-8 py-4 rounded-lg font-bold">
+              <i class="fas fa-user-graduate mr-2"></i>
+              Apply Now
+            </button>
+
+            <button class="border-2 border-white px-8 py-4 rounded-lg">
+              <i class="fas fa-book-open mr-2"></i>
+              View Courses
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+
+    <section class="bg-primary py-16 text-white">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <h2 class="text-5xl font-bold">10+</h2>
+            <p>Years Experience</p>
+          </div>
+
+          <div>
+            <h2 class="text-5xl font-bold">5000+</h2>
+            <p>Graduates</p>
+          </div>
+
+          <div>
+            <h2 class="text-5xl font-bold">95%</h2>
+            <p>Employment Rate</p>
+          </div>
+
+          <div>
+            <h2 class="text-5xl font-bold">20+</h2>
+            <p>Expert Trainers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="py-24">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <h4 class="text-accent font-semibold">ABOUT US</h4>
+
+            <h2 class="text-5xl font-bold text-primary mt-4">
+              Shaping Future Culinary Professionals
+            </h2>
+
+            <p class="mt-6 text-gray-600">
+              We provide world-class culinary training through practical
+              learning, mentorship, and industry exposure.
+            </p>
+
+            <button class="mt-8 bg-primary text-white px-8 py-4 rounded-lg">
+              Learn More
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              src=""
+              class="rounded-xl h-80 object-cover"
+            />
+
+            <div class="space-y-4">
+              <img
+                src=""
+                class="rounded-xl h-36 w-full object-cover"
+              />
+
+              <img
+                src=""
+                class="rounded-xl h-40 w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
