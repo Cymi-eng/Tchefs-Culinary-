@@ -28,4 +28,77 @@
 
 <body class="bg-gray-50">
 
+    
+    <!-- NAVBAR -->
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div>
+            <h1 class="text-4xl font-bold text-primary">TChefs</h1>
+
+            <p class="text-xs text-accent">Culinary Institute</p>
+          </div>
+
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button
+            class="hidden lg:block bg-accent text-white px-6 py-3 rounded-lg"
+          >
+            Apply Now
+          </button>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden pb-6">
+          <ul class="flex flex-col gap-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li>
+              <button class="bg-accent text-white w-full py-3 rounded-lg">
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
 <!-- HERO -->
+
+<section class="relative h-[30vh] flex items-center justify-center">
+
+    <img
+    src="assets/images/TCHEF2.webp"
+    class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative z-10 text-center text-white px-4">
+
+        <h1 class="text-4xl md:text-6xl font-bold">
+            About TChefs
+        </h1>
+
+        <p class="mt-4 text-lg">
+            Shaping Future Culinary Professionals
+        </p>
+
+    </div>
+
+</section>
