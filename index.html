@@ -105,6 +105,7 @@ menuBtn.addEventListener("click", () => {
   </div>
 </div>
 
+
           <ul class="hidden lg:flex gap-8 font-medium">
             <li><a href="#">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -390,175 +391,411 @@ menuBtn.addEventListener("click", () => {
   </div>
 
 </section>
-   <!-- COURSES -->
 
-<section class="bg-gray-100 py-24">
+<!-- FEATURED PROGRAMS -->
+
+<section class="py-24 bg-white">
+
   <div class="container mx-auto px-6">
 
-    <h2 class="text-center text-4xl md:text-5xl font-bold text-primary mb-16">
-      Featured Programs
-    </h2>
+    <!-- Heading -->
+
+    <div class="text-center mb-16">
+
+      <span class="text-accent font-semibold uppercase tracking-wider">
+        Our Programs
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+        Featured Courses
+      </h2>
+
+      <p class="text-gray-600 max-w-3xl mx-auto mt-6">
+        Industry-focused programs designed to prepare students for
+        successful careers in culinary arts and hospitality.
+      </p>
+
+    </div>
+
+    <!-- Course Cards -->
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
-        <img
-          src="assets/images/kitch.webp"
-          class="h-60 w-full object-cover"
-          alt="Culinary Arts"
-        >
+      <!-- Card 1 -->
 
-        <div class="p-6">
-          <i class="fas fa-utensils text-accent text-3xl"></i>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
 
-          <h3 class="font-bold text-xl mt-4">
+        <div class="relative">
+
+          <img
+            src="assets/images/kitch.webp"
+            alt=""
+            class="h-60 w-full object-cover"
+          >
+
+          <div
+            class="absolute bottom-0 right-5 translate-y-1/2 w-16 h-16 rounded-full bg-accent flex items-center justify-center shadow-lg"
+          >
+            <i class="fas fa-utensils text-white text-2xl"></i>
+          </div>
+
+        </div>
+
+        <div class="p-6 pt-10">
+
+          <h3 class="text-xl font-bold text-primary">
             Culinary Arts
           </h3>
 
-          <p class="mt-3 text-gray-600">
-            Professional kitchen training.
+          <p class="text-gray-600 mt-4">
+            Professional kitchen operations, menu planning,
+            food preparation and presentation.
           </p>
+
+          <a
+            href="#"
+            class="inline-block mt-6 text-accent font-semibold"
+          >
+            Learn More →
+          </a>
+
         </div>
+
       </div>
 
-      <div class="bg-white rounded-xl p-6 shadow-lg">
-        <i class="fas fa-cake-candles text-accent text-3xl"></i>
+      <!-- Card 2 -->
 
-        <h3 class="font-bold text-xl mt-4">
-          Pastry & Bakery
-        </h3>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
 
-        <p class="mt-3 text-gray-600">
-          Master baking techniques.
-        </p>
+        <div class="relative">
+
+          <img
+            src="assets/images/TCHEF3.webp"
+            alt=""
+            class="h-60 w-full object-cover"
+          >
+
+          <div
+            class="absolute bottom-0 right-5 translate-y-1/2 w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg"
+          >
+            <i class="fas fa-cake-candles text-white text-2xl"></i>
+          </div>
+
+        </div>
+
+        <div class="p-6 pt-10">
+
+          <h3 class="text-xl font-bold text-primary">
+            Pastry & Bakery
+          </h3>
+
+          <p class="text-gray-600 mt-4">
+            Master breads, cakes, desserts,
+            chocolate work and advanced pastry techniques.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block mt-6 text-accent font-semibold"
+          >
+            Learn More →
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="bg-white rounded-xl p-6 shadow-lg">
-        <i class="fas fa-hotel text-accent text-3xl"></i>
+      <!-- Card 3 -->
 
-        <h3 class="font-bold text-xl mt-4">
-          Hospitality
-        </h3>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
 
-        <p class="mt-3 text-gray-600">
-          Hotel operations & management.
-        </p>
+        <div class="relative">
+
+          <img
+            src="assets/images/TCHEF1.webp"
+            alt=""
+            class="h-60 w-full object-cover"
+          >
+
+          <div
+            class="absolute bottom-0 right-5 translate-y-1/2 w-16 h-16 rounded-full bg-accent flex items-center justify-center shadow-lg"
+          >
+            <i class="fas fa-hotel text-white text-2xl"></i>
+          </div>
+
+        </div>
+
+        <div class="p-6 pt-10">
+
+          <h3 class="text-xl font-bold text-primary">
+            Hospitality Management
+          </h3>
+
+          <p class="text-gray-600 mt-4">
+            Learn customer service, hotel operations,
+            leadership and management skills.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block mt-6 text-accent font-semibold"
+          >
+            Learn More →
+          </a>
+
+        </div>
+
       </div>
 
-      <div class="bg-white rounded-xl p-6 shadow-lg">
-        <i class="fas fa-utensil-spoon text-accent text-3xl"></i>
+      <!-- Card 4 -->
 
-        <h3 class="font-bold text-xl mt-4">
-          Food Production
-        </h3>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
 
-        <p class="mt-3 text-gray-600">
-          Commercial food preparation.
-        </p>
+        <div class="relative">
+
+          <img
+            src="assets/images/bar.webp"
+            alt=""
+            class="h-60 w-full object-cover"
+          >
+
+          <div
+            class="absolute bottom-0 right-5 translate-y-1/2 w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-lg"
+          >
+            <i class="fas fa-cocktail text-white text-2xl"></i>
+          </div>
+
+        </div>
+
+        <div class="p-6 pt-10">
+
+          <h3 class="text-xl font-bold text-primary">
+            Bartending & Mixology
+          </h3>
+
+          <p class="text-gray-600 mt-4">
+            Develop beverage preparation skills,
+            customer interaction and mixology techniques.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block mt-6 text-accent font-semibold"
+          >
+            Learn More →
+          </a>
+
+        </div>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
+  <!-- WHY CHOOSE TCHEFS -->
 
-<!-- WHY US -->
+<section class="bg-primary py-24 text-white">
 
-<section class="py-24">
+  <div class="container mx-auto px-6">
 
-<div class="container mx-auto px-6">
+    <div class="text-center mb-16">
 
-<h2 class="text-center text-5xl font-bold text-primary">
+      <span class="text-accent uppercase font-semibold tracking-wider">
+        Why Choose Us
+      </span>
 
-Why Choose TChefs?
+      <h2 class="text-4xl md:text-5xl font-bold mt-4">
+        The TChefs Advantage
+      </h2>
 
-</h2>
+      <p class="max-w-3xl mx-auto text-gray-300 mt-6">
+        We provide world-class culinary education, modern facilities,
+        experienced instructors and international career opportunities.
+      </p>
 
-<div class="grid md:grid-cols-3 gap-8 mt-12">
+    </div>
 
-<div class="bg-white shadow-lg rounded-xl p-8 text-center">
-<i class="fas fa-school text-accent text-4xl"></i>
-<h3 class="font-bold mt-4">Modern Facilities</h3>
-</div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<div class="bg-white shadow-lg rounded-xl p-8 text-center">
-<i class="fas fa-user-tie text-accent text-4xl"></i>
-<h3 class="font-bold mt-4">Industry Experts</h3>
-</div>
+      <!-- Feature 1 -->
 
-<div class="bg-white shadow-lg rounded-xl p-8 text-center">
-<i class="fas fa-briefcase text-accent text-4xl"></i>
-<h3 class="font-bold mt-4">Job Placement</h3>
-</div>
-</section>
+      <div class="text-center p-8 bg-white/5 rounded-2xl border border-white/10">
 
-<!-- CTA -->
+        <div
+          class="w-20 h-20 mx-auto rounded-full bg-accent flex items-center justify-center mb-6"
+        >
+          <i class="fas fa-user-tie text-3xl"></i>
+        </div>
 
-<section class="py-24 text-center">
-<h2 class="text-5xl font-bold text-primary">Ready To Start Your Culinary Journey?</h2>
+        <h3 class="text-2xl font-bold mb-4">
+          Expert Trainers
+        </h3>
 
-<button
-class="mt-8 bg-accent text-white px-10 py-4 rounded-lg">Apply Today</button>
+        <p class="text-gray-300">
+          Learn from highly experienced chefs and hospitality professionals.
+        </p>
+
+      </div>
+
+      <!-- Feature 2 -->
+
+      <div class="text-center p-8 bg-white/5 rounded-2xl border border-white/10">
+
+        <div
+          class="w-20 h-20 mx-auto rounded-full bg-accent flex items-center justify-center mb-6"
+        >
+          <i class="fas fa-school text-3xl"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Modern Facilities
+        </h3>
+
+        <p class="text-gray-300">
+          State-of-the-art kitchens and training environments.
+        </p>
+
+      </div>
+
+      <!-- Feature 3 -->
+
+      <div class="text-center p-8 bg-white/5 rounded-2xl border border-white/10">
+
+        <div
+          class="w-20 h-20 mx-auto rounded-full bg-accent flex items-center justify-center mb-6"
+        >
+          <i class="fas fa-globe-africa text-3xl"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Global Opportunities
+        </h3>
+
+        <p class="text-gray-300">
+          Graduates work in hotels, restaurants and cruise ships worldwide.
+        </p>
+
+      </div>
+
+      <!-- Feature 4 -->
+
+      <div class="text-center p-8 bg-white/5 rounded-2xl border border-white/10">
+
+        <div
+          class="w-20 h-20 mx-auto rounded-full bg-accent flex items-center justify-center mb-6"
+        >
+          <i class="fas fa-briefcase text-3xl"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-4">
+          Career Support
+        </h3>
+
+        <p class="text-gray-300">
+          We assist students with internships and career development.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 <!-- FOOTER -->
 
-<footer class="bg-primary text-white py-16">
-<div class="container mx-auto px-6">
-<div class="grid md:grid-cols-4 gap-10">
-<div>
+<footer class="bg-primary text-white">
 
-  <h2 class="text-3xl font-bold">TChefs</h2>
+  <div class="container mx-auto px-6 py-16">
 
-<p class="mt-4">Empowering future culinary leaders.</p>
+    <div class="grid md:grid-cols-4 gap-10">
 
-</div>
+      <!-- Logo -->
 
-<div>
-<h3 class="font-bold mb-4">Quick Links</h3>
+      <div>
+        <h2 class="text-3xl font-bold">TChefs</h2>
 
-<ul class="space-y-2">
-<li>Home</li>
-<li>About</li>
-<li>Courses</li>
-<li>Gallery</li>
-</ul>
-</div>
+        <p class="mt-4 text-gray-300">
+          Empowering future culinary leaders through world-class
+          culinary and hospitality education.
+        </p>
 
-<div>
+        <div class="flex gap-4 mt-6 text-xl">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
 
-<h3 class="font-bold mb-4">Programs</h3>
+      <!-- Quick Links -->
 
-<ul class="space-y-2">
-<li>Culinary Arts</li>
-<li>Pastry & Bakery</li>
-<li>Hospitality</li>
-</ul>
+      <div>
+        <h3 class="font-bold text-xl mb-4">Quick Links</h3>
 
-</div>
+        <ul class="space-y-3 text-gray-300">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
 
-<div>
+      <!-- Programs -->
 
-<h3 class="font-bold mb-4">Contact</h3>
+      <div>
+        <h3 class="font-bold text-xl mb-4">Programs</h3>
 
-<p>
-<i class="fas fa-phone"></i>+254 704 019 505</p>
+        <ul class="space-y-3 text-gray-300">
+          <li>Culinary Arts</li>
+          <li>Pastry & Bakery</li>
+          <li>Hospitality Management</li>
+          <li>Food Production</li>
+          <li>Bartending & Mixology</li>
+        </ul>
+      </div>
 
-<p class="mt-2">
-<i class="fas fa-envelope"></i>info@tchefs.ac.ke</p>
+      <!-- Contact -->
 
-</div>
+      <div>
+        <h3 class="font-bold text-xl mb-4">Contact Us</h3>
 
-<div>
-<hr class="my-10 border-white/20 text-center justify-center" >
+        <div class="space-y-4 text-gray-300">
 
-<p class="text-center justify-center">
-  © 2026 TChefs Culinary Institute. All Rights Reserved.
-</p>
+          <p>
+            <i class="fas fa-phone text-accent mr-2"></i>
+            +254 704 019 505
+          </p>
 
-</div>
+          <p>
+            <i class="fas fa-envelope text-accent mr-2"></i>
+            info@tchefs.ac.ke
+          </p>
+
+          <p>
+            <i class="fas fa-location-dot text-accent mr-2"></i>
+            Westlands, Nairobi, Kenya
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="border-t border-white/20 mt-12 pt-6 text-center">
+
+      <p class="text-gray-300">
+        © 2026 TChefs Culinary Institute. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
 
 </footer>
-</body>
-</html>

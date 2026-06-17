@@ -78,33 +78,91 @@
         </div>
       </div>
     </nav>
+<!-- HERO SECTION -->
 
-<!-- HERO -->
+<section class="relative h-[60vh] md:h-[70vh] flex items-center">
 
-<section class="relative h-[30vh] flex items-center justify-center">
-
-    <img
+  <!-- Background Image -->
+  <img
     src="assets/images/TCHEF2.webp"
-    class="absolute inset-0 w-full h-full object-cover">
+    alt="TChefs Culinary Institute"
+    class="absolute inset-0 w-full h-full object-cover"
+  >
 
-    <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-black/50"
+  ></div>
 
-    <div class="relative z-10 text-center text-white px-4">
+  <!-- Content -->
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        <h1 class="text-4xl md:text-6xl font-bold">
-            About TChefs
-        </h1>
+    <div class="max-w-3xl text-white">
 
-        <p class="mt-4 text-lg">
-            Shaping Future Culinary Professionals
-        </p>
+     
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+      >
+        Creating The Next Generation Of
+
+        <span class="block text-accent">
+          Culinary Leaders
+        </span>
+
+      </h1>
+
+      <p
+        class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl"
+      >
+        For over a decade, TChefs has transformed passionate students into
+        professional chefs, pastry specialists and hospitality leaders
+        working across Kenya and around the world.
+      </p>
+
+      <!-- Buttons -->
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+        <a
+          href="#mission"
+          class="bg-accent hover:bg-red-700 transition px-8 py-4 rounded-lg font-semibold text-center"
+        >
+          Discover More
+        </a>
+
+        <a
+          href="contact.html"
+          class="border-2 border-white hover:bg-white hover:text-primary transition px-8 py-4 rounded-lg font-semibold text-center"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+      <!-- Breadcrumb -->
+
+      <div class="mt-8 flex items-center gap-2 text-sm text-gray-300">
+
+        <a href="index.html" class="hover:text-white">
+          Home
+        </a>
+
+        <span>/</span>
+
+        <span class="text-accent">
+          About Us
+        </span>
+
+      </div>
 
     </div>
-</section>
 
+  </div>
+
+</section>
     <!-- MISSION & VISION -->
 
-<section class="py-20 bg-gray-100">
+<section id="mission" class="py-20 bg-gray-100">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="text-center mb-16">
