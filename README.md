@@ -17,7 +17,7 @@ The website is being developed using a mobile-first approach and follows modern 
 * Statistics Section
 * Mobile-Friendly Design
 * Tailwind CSS Styling
-* Modern Black & Gold Theme
+* Modern Blue,white& Red  Theme
 * About Section
 * Courses Section
 * Gallery
