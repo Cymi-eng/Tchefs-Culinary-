@@ -46,6 +46,15 @@
     </style>
   </head>
 
+  <script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
   <body class="bg-gray-50">
     <!-- TOP BAR -->
 
@@ -381,43 +390,76 @@
   </div>
 
 </section>
-    <!--COURSES-->
+   <!-- COURSES -->
 
-    <section class="bg-gray-100 py-24">
-      <div class="container mx-auto px-6"></div>
+<section class="bg-gray-100 py-24">
+  <div class="container mx-auto px-6">
 
-      <h2 class="text-center text-5xl font-bold text-primary mb-16">Featured Programs</h2>
+    <h2 class="text-center text-4xl md:text-5xl font-bold text-primary mb-16">
+      Featured Programs
+    </h2>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <div class="bg-white rounded-xl overflow-hidden shadow-lg"></div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <img
+          src="assets/images/kitch.webp"
+          class="h-60 w-full object-cover"
+          alt="Culinary Arts"
+        >
 
-      <img src="assets/images/kitch.webp" 
-      class="h-60 w-full object-cover">
+        <div class="p-6">
+          <i class="fas fa-utensils text-accent text-3xl"></i>
 
-  <div class="p-6">
-<i class="fas fa-utensils text-accent text-3xl"></i>
-<h3 class="font-bold text-xl mt-4">Culinary Arts</h3>
-<p class="mt-3 text-gray-600">Professional kitchen training.</p>
-</div>
+          <h3 class="font-bold text-xl mt-4">
+            Culinary Arts
+          </h3>
 
-<div class="bg-white rounded-xl p-6 shadow-lg">
-<i class="fa-solid fa-cake-candles"></i>
-<h3 class="font-bold text-xl">Pastry & Bakery</h3>
-<p class="mt-3">Master baking techniques.</p>
-</div>
+          <p class="mt-3 text-gray-600">
+            Professional kitchen training.
+          </p>
+        </div>
+      </div>
 
-<div class="bg-white rounded-xl p-6 shadow-lg">
-  <i class="fa-solid fa-hotel"></i>
-<h3 class="font-bold text-xl">Hospitality</h3>
-<p class="mt-3">Hotel operations & management.</p>
-</div>
+      <div class="bg-white rounded-xl p-6 shadow-lg">
+        <i class="fas fa-cake-candles text-accent text-3xl"></i>
 
-<div class="bg-white rounded-xl p-6 shadow-lg">
-<h3 class="font-bold text-xl">Food Production</h3>
-<p class="mt-3">Commercial food preparation.</p>
-</div>
+        <h3 class="font-bold text-xl mt-4">
+          Pastry & Bakery
+        </h3>
 
+        <p class="mt-3 text-gray-600">
+          Master baking techniques.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-lg">
+        <i class="fas fa-hotel text-accent text-3xl"></i>
+
+        <h3 class="font-bold text-xl mt-4">
+          Hospitality
+        </h3>
+
+        <p class="mt-3 text-gray-600">
+          Hotel operations & management.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-lg">
+        <i class="fas fa-utensil-spoon text-accent text-3xl"></i>
+
+        <h3 class="font-bold text-xl mt-4">
+          Food Production
+        </h3>
+
+        <p class="mt-3 text-gray-600">
+          Commercial food preparation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <!-- WHY US -->
@@ -509,10 +551,10 @@ class="mt-8 bg-accent text-white px-10 py-4 rounded-lg">Apply Today</button>
 </div>
 
 <div>
-<hr class="my-10 border-white/20 text-center" >
+<hr class="my-10 border-white/20 text-center justify-center" >
 
-<p class="text-center">
-© 2026 TChefs Culinary Institute
+<p class="text-center justify-center">
+  © 2026 TChefs Culinary Institute. All Rights Reserved.
 </p>
 
 </div>
