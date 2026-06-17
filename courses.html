@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A2E5D",
+              secondary: "#123F7A",
+              accent: "#E31B23",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- TOP BAR -->
+   
+    <div class="bg-primary text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center py-3 text-sm">
+          <div class="hidden md:flex gap-6">
+            <span>
+              <i class="fas fa-phone"></i>
+              +254 704 019 505
+            </span>
+
+            <span>
+              <i class="fas fa-envelope"></i>
+              info@tchefs.ac.ke
+            </span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- NAVBAR -->
+   
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+         <div class="flex items-center gap-3">
+  <img
+    src="assets/images/official-top-chef-logo.webp"
+    alt="TChefs Logo"
+    class="h-14 w-auto"
+  >
+
+  <div>
+    <h1 class="text-2xl md:text-3xl font-bold text-primary">
+      TChefs.
+    </h1>
+
+    <p class="text-xs text-accent">
+      Culinary Institute
+    </p>
+  </div>
+</div>
+
+
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button
+            class="hidden lg:block bg-accent text-white px-6 py-3 rounded-lg"
+          >
+            Apply Now
+          </button>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden pb-6">
+          <ul class="flex flex-col gap-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li>
+              <button class="bg-accent text-white w-full py-3 rounded-lg">
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+ 
+
+  <!-- HERO SECTION -->
+ <section class="relative h-[60vh] flex items-center">
+
+  <img
+    src="assets/images/kitch.webp"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Courses"
+  >
+
+  <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-black/50"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="max-w-3xl text-white">
+
+      <span class="bg-accent px-4 py-2 rounded-full text-sm font-semibold">
+        Professional Culinary Programs
+      </span>
+
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mt-6">
+        Explore Our
+        <span class="block text-accent">
+          Culinary Courses
+        </span>
+      </h1>
+
+      <p class="mt-6 text-lg text-gray-200">
+        Gain practical skills, professional certifications and industry
+        experience through our internationally recognized culinary programs.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- COURSE INTRO -->
+
+  <section class="py-20 bg-white">
+
+    <div class="container mx-auto px-4 text-center">
+
+      <h4 class="text-accent font-semibold uppercase">
+        Professional Training
+      </h4>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+        Build Your Culinary Career
+      </h2>
+
+      <p class="max-w-3xl mx-auto mt-6 text-gray-600">
+        TChefs offers practical and industry-focused programs designed
+        to prepare students for successful careers in culinary arts,
+        pastry & bakery, hospitality management and food production.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED PROGRAMS -->
+  <!-- Paste Featured Programs Section Here -->
+
+  <!-- WHY STUDY WITH US -->
+
+  <section class="py-24 bg-white">
+
+    <div class="container mx-auto px-4">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-4xl md:text-5xl font-bold text-primary">
+          Why Study With TChefs?
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+
+          <i class="fas fa-user-tie text-accent text-4xl"></i>
+
+          <h3 class="font-bold text-xl mt-4">
+            Expert Trainers
+          </h3>
+
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+
+          <i class="fas fa-kitchen-set text-accent text-4xl"></i>
+
+          <h3 class="font-bold text-xl mt-4">
+            Modern Kitchens
+          </h3>
+
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+
+          <i class="fas fa-certificate text-accent text-4xl"></i>
+
+          <h3 class="font-bold text-xl mt-4">
+            Certification
+          </h3>
+
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+
+          <i class="fas fa-briefcase text-accent text-4xl"></i>
+
+          <h3 class="font-bold text-xl mt-4">
+            Career Placement
+          </h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CAREER OPPORTUNITIES -->
+
+  <section class="py-24 bg-gray-100">
+
+    <div class="container mx-auto px-4">
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+
+          <img
+            src="assets/images/chef-career.webp"
+            class="rounded-2xl shadow-xl"
+            alt="Career Opportunities"
+          >
+
+        </div>
+
+        <div>
+
+          <h2 class="text-4xl font-bold text-primary">
+            Career Opportunities
+          </h2>
+
+          <p class="mt-6 text-gray-600">
+            Graduates work in hotels, restaurants, cruise liners,
+            bakeries, resorts and hospitality organizations across
+            Kenya and internationally.
+          </p>
+
+          <ul class="mt-8 space-y-4">
+
+            <li>✓ Executive Chef</li>
+            <li>✓ Pastry Chef</li>
+            <li>✓ Restaurant Manager</li>
+            <li>✓ Food Production Supervisor</li>
+            <li>✓ Cruise Liner Chef</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CALL TO ACTION -->
+
+  <section class="py-24 bg-primary text-white text-center">
+
+    <div class="container mx-auto px-4">
+
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Start Your Culinary Journey Today
+      </h2>
+
+      <p class="mt-6 max-w-2xl mx-auto text-gray-300">
+        Join hundreds of successful graduates working in Kenya
+        and around the world.
+      </p>
+
+      <a
+        href="#"
+        class="inline-block mt-8 bg-accent px-10 py-4 rounded-lg font-semibold"
+      >
+        Apply Now
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <!-- Copy Footer From Homepage -->
+
+</body>
