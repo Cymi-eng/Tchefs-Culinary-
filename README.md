@@ -22,7 +22,6 @@ The website is being developed using a mobile-first approach and follows modern 
 * Courses Section
 * Gallery
 * Testimonials
-* News & Blog
 * Contact Form
 * Login Page
 * Registration Page
@@ -72,9 +71,6 @@ tchefs-website/
 │   └── register.html
 │
 
-```
-
----
 
 # Design Goals
 
