@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A2E5D",
+              secondary: "#123F7A",
+              accent: "#E31B23",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+     <!-- TOP BAR -->
+   
+    <div class="bg-primary text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center py-3 text-sm">
+          <div class="hidden md:flex gap-6">
+            <span>
+              <i class="fas fa-phone"></i>
+              +254 704 019 505
+            </span>
+
+            <span>
+              <i class="fas fa-envelope"></i>
+              info@tchefs.ac.ke
+            </span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- NAVBAR -->
+   
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+         <div class="flex items-center gap-3">
+  <img
+    src="assets/images/official-top-chef-logo.webp"
+    alt="TChefs Logo"
+    class="h-14 w-auto"
+  >
+
+  <div>
+    <h1 class="text-2xl md:text-3xl font-bold text-primary">
+      TChefs.
+    </h1>
+
+    <p class="text-xs text-accent">
+      Culinary Institute
+    </p>
+  </div>
+</div>
+
+
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button
+            class="hidden lg:block bg-accent text-white px-6 py-3 rounded-lg"
+          >
+            Apply Now
+          </button>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden pb-6">
+          <ul class="flex flex-col gap-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li>
+              <button class="bg-accent text-white w-full py-3 rounded-lg">
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <!-- HERO -->
+
+<section class="relative h-[60vh] flex items-center">
+
+  <img
+    src="assets/images/admissions.webp"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Admissions"
+  >
+
+  <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-black/50"></div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="max-w-3xl text-white">
+
+      <span class="bg-accent px-4 py-2 rounded-full text-sm font-semibold">
+        Admissions Open
+      </span>
+
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mt-6">
+        Begin Your
+        <span class="block text-accent">
+          Culinary Journey
+        </span>
+      </h1>
+
+      <p class="mt-6 text-lg text-gray-200">
+        Join one of East Africa's leading culinary training institutions
+        and transform your passion for food into a successful career.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+</body>
+</html>
