@@ -52,14 +52,3 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("shadow-xl");
   }
 });
-// contact form
-const form = document.querySelector("form");
-
-form.addEventListener("submit", (e) => {
-  const email = form.email.value;
-
-  if (!email.includes("@")) {
-    e.preventDefault();
-    alert("Please enter a valid email.");
-  }
-});
