@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | TChefs Culinary Institute</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <script>
       tailwind.config = {
@@ -24,11 +25,9 @@
         },
       };
     </script>
-</head>
+  </head>
 
-<body class="bg-gray-50">
-
-    
+  <body class="bg-gray-50">
     <!-- NAVBAR -->
 
     <nav class="bg-white shadow-md sticky top-0 z-50">
@@ -45,8 +44,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
           </ul>
 
           <button
@@ -62,12 +61,12 @@
 
         <div id="mobileMenu" class="hidden lg:hidden pb-6">
           <ul class="flex flex-col gap-4">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
 
             <li>
               <button class="bg-accent text-white w-full py-3 rounded-lg">
@@ -78,363 +77,322 @@
         </div>
       </div>
     </nav>
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
 
-<section class="relative h-[60vh] md:h-[70vh] flex items-center">
+    <section class="relative h-[60vh] md:h-[70vh] flex items-center">
+      <!-- Background Image -->
+      <img
+        src="assets/images/TCHEF2.webp"
+        alt="TChefs Culinary Institute"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
 
-  <!-- Background Image -->
-  <img
-    src="assets/images/TCHEF2.webp"
-    alt="TChefs Culinary Institute"
-    class="absolute inset-0 w-full h-full object-cover"
-  >
+      <!-- Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-black/50"
+      ></div>
 
-  <!-- Overlay -->
-  <div
-    class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-black/50"
-  ></div>
+      <!-- Content -->
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl text-white">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+          >
+            Creating The Next Generation Of
 
-  <!-- Content -->
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="block text-accent"> Culinary Leaders </span>
+          </h1>
 
-    <div class="max-w-3xl text-white">
+          <p
+            class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl"
+          >
+            For over a decade, TChefs has transformed passionate students into
+            professional chefs, pastry specialists and hospitality leaders
+            working across Kenya and around the world.
+          </p>
 
-     
-      <h1
-        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
-      >
-        Creating The Next Generation Of
+          <!-- Buttons -->
 
-        <span class="block text-accent">
-          Culinary Leaders
-        </span>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a
+              href="#mission"
+              class="bg-accent hover:bg-red-700 transition px-8 py-4 rounded-lg font-semibold text-center"
+            >
+              Discover More
+            </a>
 
-      </h1>
-
-      <p
-        class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl"
-      >
-        For over a decade, TChefs has transformed passionate students into
-        professional chefs, pastry specialists and hospitality leaders
-        working across Kenya and around the world.
-      </p>
-
-      <!-- Buttons -->
-
-      <div class="mt-8 flex flex-col sm:flex-row gap-4">
-
-        <a
-          href="#mission"
-          class="bg-accent hover:bg-red-700 transition px-8 py-4 rounded-lg font-semibold text-center"
-        >
-          Discover More
-        </a>
-
-        <a
-          href="contact.html"
-          class="border-2 border-white hover:bg-white hover:text-primary transition px-8 py-4 rounded-lg font-semibold text-center"
-        >
-          Contact Us
-        </a>
-
+            <a
+              href="contact.html"
+              class="border-2 border-white hover:bg-white hover:text-primary transition px-8 py-4 rounded-lg font-semibold text-center"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
+    </section>
 
     <!-- MISSION & VISION -->
 
-<section id="mission" class="py-20 bg-gray-100">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="mission" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h4 class="text-accent font-semibold uppercase tracking-wider">
+            Our Purpose
+          </h4>
 
-    <div class="text-center mb-16">
-      <h4 class="text-accent font-semibold uppercase tracking-wider">
-        Our Purpose
-      </h4>
+          <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+            Mission & Vision
+          </h2>
 
-      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
-        Mission & Vision
-      </h2>
-
-      <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
-        We are committed to producing highly skilled culinary professionals
-        equipped with the knowledge, creativity, and leadership needed to
-        succeed in the global hospitality industry.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <!-- Mission -->
-
-      <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
-
-        <div
-          class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl mb-6"
-        >
-          <i class="fas fa-bullseye"></i>
-        </div>
-
-        <h3 class="text-3xl font-bold text-primary mb-4">
-          Our Mission
-        </h3>
-
-        <p class="text-gray-600 leading-relaxed">
-          Our mission is to excel in providing first-class training in
-          Culinary Arts by imparting professional skills, knowledge,
-          creativity, and attitudes of the highest standards.
-        </p>
-
-        <p class="text-gray-600 leading-relaxed mt-4">
-          Through practical training, industry exposure, and modern teaching
-          methods, we prepare students for successful careers in the
-          hospitality and catering industry.
-        </p>
-
-      </div>
-
-      <!-- Vision -->
-
-      <div class="bg-primary rounded-2xl shadow-lg p-8 text-white hover:shadow-2xl transition">
-
-        <div
-          class="w-16 h-16 rounded-full bg-white text-primary flex items-center justify-center text-2xl mb-6"
-        >
-          <i class="fas fa-eye"></i>
-        </div>
-
-        <h3 class="text-3xl font-bold mb-4">
-          Our Vision
-        </h3>
-
-        <p class="leading-relaxed">
-          Our vision is not only to produce skilled culinary professionals
-          but also to develop broad-minded, inspired leaders who will meet
-          the future challenges of the catering and hospitality industry.
-        </p>
-
-        <p class="leading-relaxed mt-4">
-          We aim to be recognized as a leading culinary training institution
-          whose graduates make a positive impact across Kenya and around the
-          world.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- SUCCESS STORIES -->
-
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div class="text-center mb-16">
-      <h4 class="text-accent font-semibold uppercase">
-        Graduate Success Stories
-      </h4>
-
-      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
-        Our Graduates Around The World
-      </h2>
-
-      <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
-        Our graduates continue to excel in hotels, restaurants, cruise liners,
-        and hospitality institutions across the globe.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- Harleen -->
-
-      <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="assets/images/Harlee.webp"
-          alt="Harleen Gokaldas"
-          class="w-full h-80 object-cover"
-        >
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-primary">
-            Harleen Gokaldas
-          </h3>
-
-          <p class="text-accent text-sm mt-1">
-            Commis 1 Pastry Chef - Kuwait
-          </p>
-
-          <p class="mt-4 text-gray-600">
-            “Friday 30th April marked the end of my time at Courtyard by Marriott, 
-            Kuwait City as a Commis 1 pastry chef. It has been a wonderful two years, 
-            experiencing the styles and lifestyles of a Middle Eastern country, pre- and post- Covid.
-             I have definitely learnt a lot about the preparations that go on at the back of house, 
-             handling large numbers with various functions such as weddings and graduation ceremonies.
+          <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
+            We are committed to producing highly skilled culinary professionals
+            equipped with the knowledge, creativity, and leadership needed to
+            succeed in the global hospitality industry.
           </p>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Mission -->
+
+          <div
+            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fas fa-bullseye"></i>
+            </div>
+
+            <h3 class="text-3xl font-bold text-primary mb-4">Our Mission</h3>
+
+            <p class="text-gray-600 leading-relaxed">
+              Our mission is to excel in providing first-class training in
+              Culinary Arts by imparting professional skills, knowledge,
+              creativity, and attitudes of the highest standards.
+            </p>
+
+            <p class="text-gray-600 leading-relaxed mt-4">
+              Through practical training, industry exposure, and modern teaching
+              methods, we prepare students for successful careers in the
+              hospitality and catering industry.
+            </p>
+          </div>
+
+          <!-- Vision -->
+
+          <div
+            class="bg-primary rounded-2xl shadow-lg p-8 text-white hover:shadow-2xl transition"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-white text-primary flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fas fa-eye"></i>
+            </div>
+
+            <h3 class="text-3xl font-bold mb-4">Our Vision</h3>
+
+            <p class="leading-relaxed">
+              Our vision is not only to produce skilled culinary professionals
+              but also to develop broad-minded, inspired leaders who will meet
+              the future challenges of the catering and hospitality industry.
+            </p>
+
+            <p class="leading-relaxed mt-4">
+              We aim to be recognized as a leading culinary training institution
+              whose graduates make a positive impact across Kenya and around the
+              world.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Jeremiah -->
+    <!-- SUCCESS STORIES -->
 
-      <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="assets/images/michel.webp"
-          alt="Jeremiah Gichia"
-          class="w-full h-80 object-cover"
-        >
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h4 class="text-accent font-semibold uppercase">
+            Graduate Success Stories
+          </h4>
 
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-primary">
-            Jeremiah Gichia
-          </h3>
+          <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+            Our Graduates Around The World
+          </h2>
 
-          <p class="text-accent text-sm mt-1">
-            Head Pastry Chef - Dubai
+          <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
+            Our graduates continue to excel in hotels, restaurants, cruise
+            liners, and hospitality institutions across the globe.
           </p>
+        </div>
 
-          <p class="mt-4 text-gray-600">
-            Michelin starred Chef Jean-Georges Vongerichten with former 
-            Top Chef student Jeremiah Gichia. Currently the head Pastry
-             Chef of COYA, located in Dubai.
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Harleen -->
+
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="assets/images/Harlee.webp"
+              alt="Harleen Gokaldas"
+              class="w-full h-80 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary">Harleen Gokaldas</h3>
+
+              <p class="text-accent text-sm mt-1">
+                Commis 1 Pastry Chef - Kuwait
+              </p>
+
+              <p class="mt-4 text-gray-600">
+                “Friday 30th April marked the end of my time at Courtyard by
+                Marriott, Kuwait City as a Commis 1 pastry chef. It has been a
+                wonderful two years, experiencing the styles and lifestyles of a
+                Middle Eastern country, pre- and post- Covid. I have definitely
+                learnt a lot about the preparations that go on at the back of
+                house, handling large numbers with various functions such as
+                weddings and graduation ceremonies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Jeremiah -->
+
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="assets/images/michel.webp"
+              alt="Jeremiah Gichia"
+              class="w-full h-80 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary">Jeremiah Gichia</h3>
+
+              <p class="text-accent text-sm mt-1">Head Pastry Chef - Dubai</p>
+
+              <p class="mt-4 text-gray-600">
+                Michelin starred Chef Jean-Georges Vongerichten with former Top
+                Chef student Jeremiah Gichia. Currently the head Pastry Chef of
+                COYA, located in Dubai.
+              </p>
+            </div>
+          </div>
+
+          <!-- Samuel -->
+
+          <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="assets/images/samuel.webp"
+              alt="Samuel Ogunja"
+              class="w-full h-80 object-cover"
+            />
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary">Samuel Ogunja</h3>
+
+              <p class="text-accent text-sm mt-1">
+                Executive Sous Chef - Cruise Liner
+              </p>
+
+              <p class="mt-4 text-gray-600">
+                Former Top Chef graduand Samuel Ogunja now Executive Sous Chef
+                on a Caribbean Cruise liner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+
+    <footer class="bg-primary text-white">
+      <div class="container mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-4 gap-10">
+          <!-- Logo -->
+
+          <div>
+            <h2 class="text-3xl font-bold">TChefs</h2>
+
+            <p class="mt-4 text-gray-300">
+              Empowering future culinary leaders through world-class culinary
+              and hospitality education.
+            </p>
+
+            <div class="flex gap-4 mt-6 text-xl">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div>
+            <h3 class="font-bold text-xl mb-4">Quick Links</h3>
+
+            <ul class="space-y-3 text-gray-300">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+
+          <!-- Programs -->
+
+          <div>
+            <h3 class="font-bold text-xl mb-4">Programs</h3>
+
+            <ul class="space-y-3 text-gray-300">
+              <li>Culinary Arts</li>
+              <li>Pastry & Bakery</li>
+              <li>Hospitality Management</li>
+              <li>Food Production</li>
+              <li>Bartending & Mixology</li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div>
+            <h3 class="font-bold text-xl mb-4">Contact Us</h3>
+
+            <div class="space-y-4 text-gray-300">
+              <p>
+                <i class="fas fa-phone text-accent mr-2"></i>
+                +254 704 019 505
+              </p>
+
+              <p>
+                <i class="fas fa-envelope text-accent mr-2"></i>
+                info@tchefs.ac.ke
+              </p>
+
+              <p>
+                <i class="fas fa-location-dot text-accent mr-2"></i>
+                Westlands, Nairobi, Kenya
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+
+        <div class="border-t border-white/20 mt-12 pt-6 text-center">
+          <p class="text-gray-300">
+            © 2026 TChefs Culinary Institute. All Rights Reserved.
           </p>
         </div>
       </div>
-
-      <!-- Samuel -->
-
-      <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-        <img
-          src="assets/images/samuel.webp"
-          alt="Samuel Ogunja"
-          class="w-full h-80 object-cover"
-        >
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-primary">
-            Samuel Ogunja
-          </h3>
-
-          <p class="text-accent text-sm mt-1">
-            Executive Sous Chef - Cruise Liner
-          </p>
-
-          <p class="mt-4 text-gray-600">
-            Former Top Chef graduand Samuel Ogunja 
-            now Executive Sous Chef on a Caribbean Cruise liner.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- FOOTER -->
-
-<footer class="bg-primary text-white">
-
-  <div class="container mx-auto px-6 py-16">
-
-    <div class="grid md:grid-cols-4 gap-10">
-
-      <!-- Logo -->
-
-      <div>
-        <h2 class="text-3xl font-bold">TChefs</h2>
-
-        <p class="mt-4 text-gray-300">
-          Empowering future culinary leaders through world-class
-          culinary and hospitality education.
-        </p>
-
-        <div class="flex gap-4 mt-6 text-xl">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-
-      <div>
-        <h3 class="font-bold text-xl mb-4">Quick Links</h3>
-
-        <ul class="space-y-3 text-gray-300">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-
-      <!-- Programs -->
-
-      <div>
-        <h3 class="font-bold text-xl mb-4">Programs</h3>
-
-        <ul class="space-y-3 text-gray-300">
-          <li>Culinary Arts</li>
-          <li>Pastry & Bakery</li>
-          <li>Hospitality Management</li>
-          <li>Food Production</li>
-          <li>Bartending & Mixology</li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-
-      <div>
-        <h3 class="font-bold text-xl mb-4">Contact Us</h3>
-
-        <div class="space-y-4 text-gray-300">
-
-          <p>
-            <i class="fas fa-phone text-accent mr-2"></i>
-            +254 704 019 505
-          </p>
-
-          <p>
-            <i class="fas fa-envelope text-accent mr-2"></i>
-            info@tchefs.ac.ke
-          </p>
-
-          <p>
-            <i class="fas fa-location-dot text-accent mr-2"></i>
-            Westlands, Nairobi, Kenya
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Bottom Footer -->
-
-    <div class="border-t border-white/20 mt-12 pt-6 text-center">
-
-      <p class="text-gray-300">
-        © 2026 TChefs Culinary Institute. All Rights Reserved.
-      </p>
-
-    </div>
-
-  </div>
-
-</footer>
-<button
-  id="scrollTop"
-  class="hidden fixed bottom-24 right-6 bg-primary text-white w-12 h-12 rounded-full z-50"
->
-  <i class="fas fa-arrow-up"></i>
-</button>
-<script src="script.js"></script>
-</body>
+    </footer>
+    <button
+      id="scrollTop"
+      class="hidden fixed bottom-24 right-6 bg-primary text-white w-12 h-12 rounded-full z-50"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+  </body>
 </html>
