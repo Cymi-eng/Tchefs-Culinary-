@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration | TChefs Culinary Institute</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A2E5D",
+              secondary: "#123F7A",
+              accent: "#E31B23",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 min-h-screen">
+    <!-- NAVBAR -->
+
+    <nav class="bg-white shadow-md">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center gap-3">
+            <img
+              src="assets/images/official-top-chef-logo.webp"
+              alt="TChefs Logo"
+              class="h-14"
+            />
+
+            <div>
+              <h1 class="text-2xl font-bold text-primary">TChefs</h1>
+
+              <p class="text-xs text-accent">Culinary Institute</p>
+            </div>
+          </div>
+
+          <a
+            href="index.html"
+            class="text-primary font-semibold hover:text-accent transition"
+          >
+            Back Home
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- LOGIN SECTION -->
+
+    <section class="py-10">
+      <div class="container mx-auto px-4">
+        <div class="max-w-md mx-auto">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <!-- HEADER -->
+
+            <div class="bg-primary text-white text-center p-6">
+              <i class="fas fa-lock text-4xl"></i>
+
+              <h2 class="text-2xl font-bold mt-3">Student Login</h2>
+
+              <p class="mt-2 text-sm text-gray-300">
+                Access your TChefs student portal.
+              </p>
+            </div>
+
+            <!-- FORM -->
+
+            <form id="loginForm" class="p-6 space-y-4">
+              <div>
+                <label class="block mb-2 text-sm font-medium">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="loginEmail"
+                  placeholder="Enter your email"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block mb-2 text-sm font-medium"> Password </label>
+
+                <input
+                  type="password"
+                  id="loginPassword"
+                  placeholder="Enter your password"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-accent text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition"
+              >
+                Login
+              </button>
+            </form>
+
+            <!-- SIGNUP LINK -->
+
+            <div class="bg-gray-50 p-4 text-center">
+              <p class="text-gray-600 text-sm">Don't have an account?</p>
+
+              <a
+                href="signup.html"
+                class="text-primary font-semibold hover:text-accent"
+              >
+                Create Account
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
