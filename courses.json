@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Professional Culinary Arts",
+    "duration": "12 Months",
+    "image": "assets/images/kitch.webp",
+    "description": "Master professional cooking techniques and kitchen operations."
+  },
+  {
+    "id": 2,
+    "title": "Pastry & Bakery Arts",
+    "duration": "6 Months",
+    "image": "assets/images/pastry.webp",
+    "description": "Learn baking, cake decoration and pastry production."
+  },
+  {
+    "id": 3,
+    "title": "Food Production",
+    "duration": "8 Months",
+    "image": "assets/images/food-production.webp",
+    "description": "Commercial food preparation and production management."
+  },
+  {
+    "id": 4,
+    "title": "Hospitality Management",
+    "duration": "12 Months",
+    "image": "assets/images/hospitality.webp",
+    "description": "Develop hospitality and hotel management skills."
+  }
+]
