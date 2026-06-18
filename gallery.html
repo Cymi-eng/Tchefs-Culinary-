@@ -1,0 +1,518 @@
+<!-- GALLERY HERO SECTION -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TChefs Culinary Institute</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A2E5D",
+              secondary: "#123F7A",
+              accent: "#E31B23",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- TOP BAR -->
+
+    <div class="bg-primary text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center py-3 text-sm">
+          <div class="hidden md:flex gap-6">
+            <span>
+              <i class="fas fa-phone"></i>
+              +254 704 019 505
+            </span>
+
+            <span>
+              <i class="fas fa-envelope"></i>
+              culinarytchefs@gmail.com
+            </span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+         <div class="flex items-center gap-3">
+  <img
+    src="assets/images/official-top-chef-logo.webp"
+    alt="TChefs Logo"
+    class="h-14 w-auto"
+  >
+
+  <div>
+    <h1 class="text-2xl md:text-3xl font-bold text-primary">
+      TChefs.
+    </h1>
+
+    <p class="text-xs text-accent">
+      Culinary Institute
+    </p>
+  </div>
+</div>
+
+
+          <ul class="hidden lg:flex gap-8 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button
+            class="hidden lg:block bg-accent text-white px-6 py-3 rounded-lg"
+          >
+            Apply Now
+          </button>
+
+          <button id="menuBtn" class="lg:hidden text-3xl text-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden lg:hidden pb-6">
+          <ul class="flex flex-col gap-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <li>
+              <button class="bg-accent text-white w-full py-3 rounded-lg">
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<section class="relative h-[60vh] md:h-[70vh] flex items-center">
+
+  <!-- Background Image -->
+
+  <img
+    src="assets/images/gallery-banner.webp"
+    alt="TChefs Gallery"
+    class="absolute inset-0 w-full h-full object-cover"
+  >
+
+  <!-- Overlay -->
+
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-black/40"
+  ></div>
+
+  <!-- Content -->
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="max-w-3xl text-white">
+
+      <span
+        class="bg-accent px-4 py-2 rounded-full text-sm font-semibold"
+      >
+        Culinary Moments
+      </span>
+
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mt-6"
+      >
+        Explore Our
+        <span class="block text-accent">
+          Gallery
+        </span>
+      </h1>
+
+      <p
+        class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl"
+      >
+        Discover life at TChefs through practical kitchen sessions,
+        pastry creations, graduations, student activities and
+        unforgettable culinary experiences.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY SECTION -->
+
+<section class="py-20 bg-white">
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+
+    <div class="text-center mb-16">
+
+      <span class="text-accent font-semibold uppercase tracking-wider">
+        Our Gallery
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+        Moments At TChefs
+      </h2>
+
+      <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
+        Explore our vibrant culinary training environment, student activities,
+        practical kitchen sessions and memorable graduation moments.
+      </p>
+
+    </div>
+
+    <!-- Gallery Grid -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Image 1 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery1.webp"
+          alt="Students Cooking"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Kitchen Practicals
+          </h3>
+
+        </div>
+
+      </div>
+
+      <!-- Image 2 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery2.webp"
+          alt="Pastry Training"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Pastry Creations
+          </h3>
+
+        </div>
+
+      </div>
+
+      <!-- Image 3 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery3.webp"
+          alt="Graduation Ceremony"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Graduation Moments
+          </h3>
+
+        </div>
+
+      </div>
+
+      <!-- Image 4 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery4.webp"
+          alt="Chef Training"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Chef Training
+          </h3>
+
+        </div>
+
+      </div>
+
+      <!-- Image 5 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery5.webp"
+          alt="Food Presentation"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Food Presentation
+          </h3>
+
+        </div>
+
+      </div>
+
+      <!-- Image 6 -->
+
+      <div
+        class="overflow-hidden rounded-2xl shadow-lg group relative"
+      >
+
+        <img
+          src="assets/images/gallery6.webp"
+          alt="Kitchen Environment"
+          class="w-full h-80 object-cover group-hover:scale-110 group-hover:brightness-75 transition duration-500"
+        >
+
+        <div
+          class="absolute inset-0 flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-500"
+        >
+
+          <h3 class="text-white text-2xl font-bold">
+            Culinary Environment
+          </h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STUDENT LIFE SECTION -->
+
+<section class="py-20 bg-gray-100">
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-16">
+
+      <span class="text-accent font-semibold uppercase tracking-wider">
+        Life At TChefs
+      </span>
+
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mt-4">
+        More Than A Culinary School
+      </h2>
+
+      <p class="mt-6 text-gray-600 max-w-3xl mx-auto">
+        Beyond culinary training, our students experience teamwork,
+        creativity, competitions, mentorship and lifelong friendships.
+      </p>
+
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+
+        <img
+          src="assets/images/student-life1.webp"
+          alt=""
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-6">
+
+          <h3 class="text-xl font-bold text-primary">
+            Practical Learning
+          </h3>
+
+          <p class="mt-3 text-gray-600">
+            Students gain hands-on experience through daily practical kitchen sessions.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+
+        <img
+          src="assets/images/student-life2.webp"
+          alt=""
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-6">
+
+          <h3 class="text-xl font-bold text-primary">
+            Team Collaboration
+          </h3>
+
+          <p class="mt-3 text-gray-600">
+            Learn teamwork and leadership skills while working alongside fellow students.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
+
+        <img
+          src="assets/images/student-life3.webp"
+          alt=""
+          class="w-full h-64 object-cover"
+        >
+
+        <div class="p-6">
+
+          <h3 class="text-xl font-bold text-primary">
+            Career Success
+          </h3>
+
+          <p class="mt-3 text-gray-600">
+            Our graduates work in hotels, restaurants and cruise liners across the world.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="py-24 bg-primary text-white text-center">
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+    <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+      Be Part Of The TChefs Experience
+    </h2>
+
+    <p class="mt-6 max-w-2xl mx-auto text-gray-300">
+      Join a community of passionate culinary professionals and
+      start building your future in the hospitality industry.
+    </p>
+    
+  </div>
+  <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+
+  <a
+    href="admissions.html"
+    class="bg-accent hover:bg-red-700 transition px-10 py-4 rounded-lg font-semibold"
+  >
+    Apply Now
+  </a>
+
+  <a
+    href="courses.html"
+    class="border-2 border-white px-10 py-4 rounded-lg font-semibold"
+  >
+    View Courses
+  </a>
+
+</div>
+
+</section>
+
+<!-- MOBILE MENU SCRIPT -->
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
