@@ -90,7 +90,7 @@ document.getElementById("loginForm")?.addEventListener("submit", function (e) {
     setButtonState("Welcome back, " + result.student.fullname.split(" ")[0] + "!", true);
 
     setTimeout(() => {
-      window.location.href = "student-dashboard.html";
+      window.location.href = "dashboard.html";
     }, 800);
 
   }, 600);

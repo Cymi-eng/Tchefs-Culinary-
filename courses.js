@@ -6,7 +6,7 @@ fetch("courses.json")
     coursesContainer.innerHTML = ""; // clears loading state
 
     courses.forEach(course => {
-      coursesContainer.innerHTML += `
+      coursesContainer.innerHTML += `// Add more HTML without removing existing HTML
         <div class="course-card bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col">
           <div class="h-56 overflow-hidden">
             <img
