@@ -15,16 +15,37 @@
   },
   {
     "id": 3,
-    "title": "Food Production",
+    "title": "cookery short course",
     "duration": "8 Months",
-    "image": "assets/images/food-production.webp",
-    "description": "Commercial food preparation and production management."
+    "image": "assets/images/cookery.webp",
+    "description": "The Course is designed to give the participant basic knowledge in Cookery."
   },
   {
     "id": 4,
-    "title": "Hospitality Management",
+    "title": "certificate in culinary arts",
     "duration": "12 Months",
-    "image": "assets/images/hospitality.webp",
+    "image": "assets/images/cul arts.webp",
+    "description": "Develop hospitality and hotel management skills."
+  },
+  {
+    "id": 4,
+    "title": "certificate in culinary arts",
+    "duration": "12 Months",
+    "image": "assets/images/cul arts.webp",
+    "description": "Develop hospitality and hotel management skills."
+  },
+  {
+    "id": 4,
+    "title": "certificate in culinary arts",
+    "duration": "12 Months",
+    "image": "assets/images/cul arts.webp",
+    "description": "Develop hospitality and hotel management skills."
+  },
+  {
+    "id": 4,
+    "title": "certificate in culinary arts",
+    "duration": "12 Months",
+    "image": "assets/images/cul arts.webp",
     "description": "Develop hospitality and hotel management skills."
   }
 ]
