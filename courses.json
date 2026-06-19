@@ -4,48 +4,27 @@
     "title": "Professional Culinary Arts",
     "duration": "12 Months",
     "image": "assets/images/kitch.webp",
-    "description": "Master professional cooking techniques and kitchen operations."
+    "description": "Master professional cooking techniques and kitchen operations in a hands-on, industry-focused environment."
   },
   {
     "id": 2,
     "title": "Pastry & Bakery Arts",
     "duration": "6 Months",
     "image": "assets/images/pastry.webp",
-    "description": "Learn baking, cake decoration and pastry production."
+    "description": "Learn baking, cake decoration, and pastry production from expert instructors with real-world experience."
   },
   {
     "id": 3,
-    "title": "cookery short course",
+    "title": "Cookery Short Course",
     "duration": "8 Months",
     "image": "assets/images/cookery.webp",
-    "description": "The Course is designed to give the participant basic knowledge in Cookery."
+    "description": "Designed to give participants a solid foundation in cookery — from knife skills to menu planning and kitchen safety."
   },
   {
     "id": 4,
-    "title": "certificate in culinary arts",
+    "title": "Certificate in Culinary Arts",
     "duration": "12 Months",
     "image": "assets/images/cul arts.webp",
-    "description": "Develop hospitality and hotel management skills."
-  },
-  {
-    "id": 4,
-    "title": "certificate in culinary arts",
-    "duration": "12 Months",
-    "image": "assets/images/cul arts.webp",
-    "description": "Develop hospitality and hotel management skills."
-  },
-  {
-    "id": 4,
-    "title": "certificate in culinary arts",
-    "duration": "12 Months",
-    "image": "assets/images/cul arts.webp",
-    "description": "Develop hospitality and hotel management skills."
-  },
-  {
-    "id": 4,
-    "title": "certificate in culinary arts",
-    "duration": "12 Months",
-    "image": "assets/images/cul arts.webp",
-    "description": "Develop hospitality and hotel management skills."
+    "description": "A comprehensive certificate programme covering culinary fundamentals, hospitality skills, and professional kitchen management."
   }
 ]
