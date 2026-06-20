@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | TChefs Culinary Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0A2E5D",
+            accent:  "#E31B23",
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fb; }
+
+    /* Sidebar slides in/out on mobile */
+    #sidebar { transition: transform 0.3s ease; }
+
+    /* Each sidebar link */
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+    }
+    .nav-link:hover  { background: rgba(255,255,255,0.1); color: #fff; }
+    .nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    /* Show / hide tab panels */
+    .tab-panel          { display: none; }
+    .tab-panel.active   { display: block; }
+
+    /* Overlay behind sidebar on mobile */
+    #overlay { display: none; }
+    #overlay.open { display: block; }
+  </style>
+</head>
+
+<body class="min-h-screen">
+<div class="flex min-h-screen">
+
+  <!-- ═══════════════════════════════════
+       SIDEBAR
+       ═══════════════════════════════════ -->
+  <aside
+    id="sidebar"
+    class="fixed lg:static inset-y-0 left-0 z-40 w-60
+           bg-primary flex flex-col -translate-x-full lg:translate-x-0"
+  >
+
+    <!-- Logo at the top of the sidebar -->
+    <div class="px-5 py-6 border-b border-white/10">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/official-top-chef-logo.webp" alt="TChefs" class="h-10 w-auto" />
+        <div>
+          <p class="font-display text-lg font-bold text-white leading-none">TChefs.</p>
+          <p class="text-xs text-accent tracking-widest uppercase mt-0.5">Student Portal</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Student name + initials shown in the sidebar -->
+    <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3">
+      <!-- Circle with student's first initial -->
+      <div
+        id="sidebarInitial"
+        class="w-9 h-9 rounded-full bg-accent flex items-center justify-center
+               font-bold text-white text-sm flex-shrink-0"
+      >?</div>
+      <div class="overflow-hidden">
+        <p id="sidebarName"   class="text-white text-sm font-semibold truncate">Loading…</p>
+        <p id="sidebarCourse" class="text-white/40 text-xs truncate">—</p>
+      </div>
+    </div>
+
+    <!-- Navigation links -->
+    <nav class="flex-1 px-3 py-4 space-y-1">
+      <!-- Each button calls showTab() with the tab name -->
+      <button class="nav-link active" onclick="showTab('dashboard')" id="nav-dashboard">Dashboard</button>
+      <button class="nav-link"        onclick="showTab('profile')"   id="nav-profile">My Profile</button>
+    </nav>
+
+    <!-- Logout button at the bottom of the sidebar -->
+    <div class="px-3 py-4 border-t border-white/10">
+      <button onclick="logout()" class="nav-link hover:bg-red-600/30 hover:text-white">
+        Logout
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- Dark overlay that appears behind sidebar on mobile -->
+  <div id="overlay" onclick="closeSidebar()" class="fixed inset-0 z-30 bg-black/40 lg:hidden"></div>
+
+  <!-- ═══════════════════════════════════
+       MAIN CONTENT AREA
+       ═══════════════════════════════════ -->
+  <div class="flex-1 flex flex-col min-w-0">
+
+    <!-- Top bar with hamburger menu (mobile) and page title -->
+    <header class="bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-20">
+      <div class="flex items-center gap-4">
+
+        <!-- Hamburger button — only visible on mobile -->
+        <button onclick="openSidebar()" class="lg:hidden flex flex-col gap-1.5 p-1">
+          <span class="block w-5 h-0.5 bg-gray-600"></span>
+          <span class="block w-5 h-0.5 bg-gray-600"></span>
+          <span class="block w-4 h-0.5 bg-gray-600"></span>
+        </button>
+
+        <!-- Page title — changes when you switch tabs -->
+        <p id="pageTitle" class="font-display font-bold text-primary text-lg">Dashboard</p>
+      </div>
+
+      <!-- Avatar circle in the top-right corner -->
+      <div
+        id="headerInitial"
+        class="w-9 h-9 rounded-full bg-accent flex items-center justify-center
+               font-bold text-white text-sm"
+      >?</div>
+    </header>
+
+    <!-- All tab panels live here -->
+    <main class="flex-1 p-6">
+
+      <!-- ═══════════════════════════════
+           TAB: DASHBOARD
+           ═══════════════════════════════ -->
+      <div id="tab-dashboard" class="tab-panel active space-y-6">
+
+        <!-- Welcome banner -->
+        <div class="bg-primary rounded-2xl p-8">
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">Student Portal</p>
+          <!-- Student name injected here by dashboard.js -->
+          <h2 class="font-display text-3xl font-bold text-white mb-1">
+            Hello, <span id="welcomeName">Student</span>!
+          </h2>
+          <p class="text-white/60 text-sm">Welcome to your TChefs student dashboard.</p>
+        </div>
+
+        <!-- Info cards: one card per piece of student data -->
+        <div class="grid sm:grid-cols-2 gap-5">
+
+          <!-- Full Name card -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Full Name</p>
+            <p id="cardName" class="font-display text-xl font-bold text-primary">—</p>
+          </div>
+
+          <!-- Email card -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Email Address</p>
+            <p id="cardEmail" class="font-display text-xl font-bold text-primary break-all">—</p>
+          </div>
+
+          <!-- Phone card -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Phone Number</p>
+            <p id="cardPhone" class="font-display text-xl font-bold text-primary">—</p>
+          </div>
+
+          <!-- Course card -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Enrolled Course</p>
+            <p id="cardCourse" class="font-display text-xl font-bold text-primary">—</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════
+           TAB: MY PROFILE
+           ═══════════════════════════════ -->
+      <div id="tab-profile" class="tab-panel space-y-5">
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-8">
+
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-4">My Profile</p>
+
+          <!-- Profile details displayed in a clean list -->
+          <div class="space-y-5">
+
+            <div class="flex flex-col gap-1 border-b border-gray-100 pb-5">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Full Name</p>
+              <p id="profileName" class="text-gray-800 font-semibold text-base">—</p>
+            </div>
+
+            <div class="flex flex-col gap-1 border-b border-gray-100 pb-5">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Email Address</p>
+              <p id="profileEmail" class="text-gray-800 font-semibold text-base">—</p>
+            </div>
+
+            <div class="flex flex-col gap-1 border-b border-gray-100 pb-5">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Phone Number</p>
+              <p id="profilePhone" class="text-gray-800 font-semibold text-base">—</p>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-400">Enrolled Course</p>
+              <p id="profileCourse" class="text-gray-800 font-semibold text-base">—</p>
+            </div>
+
+          </div>
+
+          <!-- Logout button inside profile tab -->
+          <button
+            onclick="logout()"
+            class="mt-8 w-full bg-accent hover:bg-red-700 transition text-white
+                   font-semibold py-3.5 rounded-lg text-sm"
+          >
+            Logout
+          </button>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- Load the dashboard logic -->
+<script src="dashboard.js"></script>
+</body>
+</html>
