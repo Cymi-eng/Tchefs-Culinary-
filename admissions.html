@@ -27,7 +27,6 @@
       html { scroll-behavior: smooth; }
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body { font-family: 'Inter', sans-serif; }
-
       .nav-link { position: relative; padding-bottom: 2px; }
       .nav-link::after {
         content: ''; position: absolute;
@@ -35,12 +34,9 @@
         background: #E31B23; transition: width 0.3s ease;
       }
       .nav-link:hover::after { width: 100%; }
-
       #mobileMenu { display: none; }
       #mobileMenu.open { display: block; }
       #scrollTop { display: none; }
-
-      /* Step connector line */
       .step-row { position: relative; }
       .step-row::before {
         content: '';
@@ -51,8 +47,6 @@
         height: 1px;
         background: #e5e7eb;
       }
-
-      /* Form focus ring */
       input:focus, select:focus, textarea:focus {
         outline: none;
         border-color: #0A2E5D;
@@ -89,37 +83,33 @@
               <p class="text-xs font-medium text-accent tracking-widest uppercase mt-0.5">Culinary Institute</p>
             </div>
           </a>
-
           <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-700">
-            <li><a href="index.html" class="nav-link hover:text-primary transition">Home</a></li>
-            <li><a href="about.html" class="nav-link hover:text-primary transition">About</a></li>
-            <li><a href="courses.html" class="nav-link hover:text-primary transition">Courses</a></li>
+            <li><a href="index.html"      class="nav-link hover:text-primary transition">Home</a></li>
+            <li><a href="about.html"      class="nav-link hover:text-primary transition">About</a></li>
+            <li><a href="courses.html"    class="nav-link hover:text-primary transition">Courses</a></li>
             <li><a href="admissions.html" class="nav-link text-accent">Admissions</a></li>
-            <li><a href="gallery.html" class="nav-link hover:text-primary transition">Gallery</a></li>
-            <li><a href="contacts.html" class="nav-link hover:text-primary transition">Contact</a></li>
-            <li><a href="login.html" class="nav-link hover:text-primary transition">Login</a></li>
+            <li><a href="gallery.html"    class="nav-link hover:text-primary transition">Gallery</a></li>
+            <li><a href="contacts.html"   class="nav-link hover:text-primary transition">Contact</a></li>
+            <li><a href="login.html"      class="nav-link hover:text-primary transition">Login</a></li>
           </ul>
-
           <a href="#apply" class="hidden lg:inline-block bg-accent hover:bg-red-700 transition text-white text-sm font-semibold px-6 py-2.5 rounded-lg">
             Apply Now
           </a>
-
           <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
             <span class="block w-6 h-0.5 bg-primary"></span>
             <span class="block w-6 h-0.5 bg-primary"></span>
             <span class="block w-4 h-0.5 bg-primary"></span>
           </button>
         </div>
-
         <div id="mobileMenu" class="pb-6 border-t border-gray-100">
           <ul class="flex flex-col gap-1 pt-4 text-sm font-medium text-gray-700">
-            <li><a href="index.html" class="block py-2 px-3 rounded hover:bg-gray-50">Home</a></li>
-            <li><a href="about.html" class="block py-2 px-3 rounded hover:bg-gray-50">About</a></li>
-            <li><a href="courses.html" class="block py-2 px-3 rounded hover:bg-gray-50">Courses</a></li>
+            <li><a href="index.html"      class="block py-2 px-3 rounded hover:bg-gray-50">Home</a></li>
+            <li><a href="about.html"      class="block py-2 px-3 rounded hover:bg-gray-50">About</a></li>
+            <li><a href="courses.html"    class="block py-2 px-3 rounded hover:bg-gray-50">Courses</a></li>
             <li><a href="admissions.html" class="block py-2 px-3 rounded bg-red-50 text-accent">Admissions</a></li>
-            <li><a href="gallery.html" class="block py-2 px-3 rounded hover:bg-gray-50">Gallery</a></li>
-            <li><a href="contacts.html" class="block py-2 px-3 rounded hover:bg-gray-50">Contact</a></li>
-            <li><a href="login.html" class="block py-2 px-3 rounded hover:bg-gray-50">Login</a></li>
+            <li><a href="gallery.html"    class="block py-2 px-3 rounded hover:bg-gray-50">Gallery</a></li>
+            <li><a href="contacts.html"   class="block py-2 px-3 rounded hover:bg-gray-50">Contact</a></li>
+            <li><a href="login.html"      class="block py-2 px-3 rounded hover:bg-gray-50">Login</a></li>
             <li class="pt-2">
               <a href="#apply" class="block text-center bg-accent text-white py-3 rounded-lg font-semibold">Apply Now</a>
             </li>
@@ -130,41 +120,25 @@
 
     <!-- HERO -->
     <section class="relative h-[65vh] flex items-end overflow-hidden bg-primary">
-      <img
-        src="assets/images/admissions.webp"
-        alt="TChefs Admissions"
-        class="absolute inset-0 w-full h-full object-cover opacity-40"
-      />
+      <img src="assets/images/admissions.webp" alt="TChefs Admissions" class="absolute inset-0 w-full h-full object-cover opacity-40" />
       <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-transparent"></div>
-
       <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full">
         <p class="text-white/50 text-xs tracking-widest uppercase mb-6 font-medium">
           <a href="index.html" class="hover:text-white/80 transition">Home</a>
-          <span class="mx-2">/</span>
-          Admissions
+          <span class="mx-2">/</span> Admissions
         </p>
-
-        <!-- "Admissions Open" badge -->
         <span class="inline-block bg-accent/20 border border-accent/40 text-accent text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-5">
           Admissions Open
         </span>
-
         <h1 class="font-display text-white font-bold leading-tight text-5xl sm:text-6xl lg:text-7xl max-w-2xl">
-          Begin Your
-          <span class="text-accent block mt-1">Culinary Journey.</span>
+          Begin Your <span class="text-accent block mt-1">Culinary Journey.</span>
         </h1>
-
         <p class="mt-6 text-gray-300 text-lg max-w-xl leading-relaxed">
           Join one of East Africa's leading culinary training institutions and transform your passion for food into a successful career.
         </p>
-
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#apply" class="bg-accent hover:bg-red-700 transition text-white font-semibold px-8 py-4 rounded-lg text-sm">
-            Apply Now
-          </a>
-          <a href="#process" class="border border-white/30 hover:border-white hover:bg-white/10 transition text-white font-semibold px-8 py-4 rounded-lg text-sm">
-            How to Apply
-          </a>
+          <a href="#apply"   class="bg-accent hover:bg-red-700 transition text-white font-semibold px-8 py-4 rounded-lg text-sm">Apply Now</a>
+          <a href="#process" class="border border-white/30 hover:border-white hover:bg-white/10 transition text-white font-semibold px-8 py-4 rounded-lg text-sm">How to Apply</a>
         </div>
       </div>
     </section>
@@ -175,38 +149,17 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-4">Who We Welcome</p>
-            <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary leading-tight">
-              Admissions<br/>Made Simple
-            </h2>
+            <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary leading-tight">Admissions<br/>Made Simple</h2>
             <div class="w-16 h-px bg-accent mt-6 mb-8"></div>
-            <p class="text-gray-600 leading-relaxed mb-5">
-              TChefs welcomes students who are passionate about culinary arts, hospitality, and professional food production. Whether you are a recent school leaver, a career changer, or an aspiring chef — our doors are open.
-            </p>
-            <p class="text-gray-600 leading-relaxed mb-8">
-              Our admissions team is ready to guide you through every step, from choosing the right programme to your first day in the kitchen.
-            </p>
-
-            <!-- Quick facts -->
+            <p class="text-gray-600 leading-relaxed mb-5">TChefs welcomes students who are passionate about culinary arts, hospitality, and professional food production. Whether you are a recent school leaver, a career changer, or an aspiring chef — our doors are open.</p>
+            <p class="text-gray-600 leading-relaxed mb-8">Our admissions team is ready to guide you through every step, from choosing the right programme to your first day in the kitchen.</p>
             <div class="grid grid-cols-2 gap-4">
-              <div class="border-l-2 border-accent pl-4">
-                <p class="font-display text-2xl font-bold text-primary">3</p>
-                <p class="text-gray-500 text-sm mt-0.5">Intakes per year</p>
-              </div>
-              <div class="border-l-2 border-primary pl-4">
-                <p class="font-display text-2xl font-bold text-primary">4+</p>
-                <p class="text-gray-500 text-sm mt-0.5">Programmes available</p>
-              </div>
-              <div class="border-l-2 border-accent pl-4">
-                <p class="font-display text-2xl font-bold text-primary">KCSE</p>
-                <p class="text-gray-500 text-sm mt-0.5">Minimum qualification</p>
-              </div>
-              <div class="border-l-2 border-primary pl-4">
-                <p class="font-display text-2xl font-bold text-primary">100%</p>
-                <p class="text-gray-500 text-sm mt-0.5">Practical-focused training</p>
-              </div>
+              <div class="border-l-2 border-accent pl-4"><p class="font-display text-2xl font-bold text-primary">3</p><p class="text-gray-500 text-sm mt-0.5">Intakes per year</p></div>
+              <div class="border-l-2 border-primary pl-4"><p class="font-display text-2xl font-bold text-primary">4+</p><p class="text-gray-500 text-sm mt-0.5">Programmes available</p></div>
+              <div class="border-l-2 border-accent pl-4"><p class="font-display text-2xl font-bold text-primary">KCSE</p><p class="text-gray-500 text-sm mt-0.5">Minimum qualification</p></div>
+              <div class="border-l-2 border-primary pl-4"><p class="font-display text-2xl font-bold text-primary">100%</p><p class="text-gray-500 text-sm mt-0.5">Practical-focused training</p></div>
             </div>
           </div>
-
           <div class="rounded-2xl overflow-hidden h-[500px]">
             <img src="assets/images/TCHEF1.webp" alt="TChefs students" class="w-full h-full object-cover" />
           </div>
@@ -222,50 +175,23 @@
           <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary">Application Process</h2>
           <div class="w-16 h-px bg-accent mx-auto mt-6"></div>
         </div>
-
-        <!-- Steps -->
         <div class="step-row grid grid-cols-2 lg:grid-cols-4 gap-8 relative">
-
           <div class="flex flex-col items-center text-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">
-              1
-            </div>
-            <div>
-              <p class="font-display font-bold text-primary text-lg">Choose a Course</p>
-              <p class="text-gray-500 text-sm mt-2 leading-relaxed">Browse our programmes and select the one that matches your goals.</p>
-            </div>
+            <div class="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">1</div>
+            <div><p class="font-display font-bold text-primary text-lg">Choose a Course</p><p class="text-gray-500 text-sm mt-2 leading-relaxed">Browse our programmes and select the one that matches your goals.</p></div>
           </div>
-
           <div class="flex flex-col items-center text-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">
-              2
-            </div>
-            <div>
-              <p class="font-display font-bold text-primary text-lg">Submit Documents</p>
-              <p class="text-gray-500 text-sm mt-2 leading-relaxed">Gather and submit your academic certificates and identification.</p>
-            </div>
+            <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">2</div>
+            <div><p class="font-display font-bold text-primary text-lg">Submit Documents</p><p class="text-gray-500 text-sm mt-2 leading-relaxed">Gather and submit your academic certificates and identification.</p></div>
           </div>
-
           <div class="flex flex-col items-center text-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">
-              3
-            </div>
-            <div>
-              <p class="font-display font-bold text-primary text-lg">Receive Offer Letter</p>
-              <p class="text-gray-500 text-sm mt-2 leading-relaxed">Our team reviews your application and issues your admission letter.</p>
-            </div>
+            <div class="w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">3</div>
+            <div><p class="font-display font-bold text-primary text-lg">Receive Offer Letter</p><p class="text-gray-500 text-sm mt-2 leading-relaxed">Our team reviews your application and issues your admission letter.</p></div>
           </div>
-
           <div class="flex flex-col items-center text-center gap-4">
-            <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">
-              4
-            </div>
-            <div>
-              <p class="font-display font-bold text-primary text-lg">Enroll & Start</p>
-              <p class="text-gray-500 text-sm mt-2 leading-relaxed">Complete enrolment, pay fees, and begin your culinary training.</p>
-            </div>
+            <div class="w-14 h-14 rounded-full bg-primary text-white flex items-center justify-center font-display text-xl font-bold z-10 relative">4</div>
+            <div><p class="font-display font-bold text-primary text-lg">Enroll &amp; Start</p><p class="text-gray-500 text-sm mt-2 leading-relaxed">Complete enrolment, pay fees, and begin your culinary training.</p></div>
           </div>
-
         </div>
       </div>
     </section>
@@ -273,56 +199,35 @@
     <!-- REQUIRED DOCUMENTS -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-6">
-
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div>
             <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-4">Admissions Checklist</p>
-            <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary leading-tight">
-              Required Documents
-            </h2>
+            <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary leading-tight">Required Documents</h2>
             <div class="w-16 h-px bg-accent mt-6"></div>
           </div>
-          <p class="text-gray-500 max-w-sm text-sm leading-relaxed">
-            Ensure you have the following ready when submitting your application.
-          </p>
+          <p class="text-gray-500 max-w-sm text-sm leading-relaxed">Ensure you have the following ready when submitting your application.</p>
         </div>
-
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
           <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-              <div class="w-4 h-5 border-2 border-accent rounded-sm"></div>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6"><div class="w-4 h-5 border-2 border-accent rounded-sm"></div></div>
             <h3 class="font-display text-lg font-bold text-primary mb-3">Academic Certificates</h3>
             <p class="text-gray-500 text-sm leading-relaxed">KCSE certificate or equivalent academic qualification.</p>
           </div>
-
           <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-              <div class="w-5 h-4 border-2 border-primary rounded-sm"></div>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6"><div class="w-5 h-4 border-2 border-primary rounded-sm"></div></div>
             <h3 class="font-display text-lg font-bold text-primary mb-3">Identification</h3>
             <p class="text-gray-500 text-sm leading-relaxed">National ID, Passport, or Birth Certificate.</p>
           </div>
-
           <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
-              <div class="w-4 h-4 rounded-full border-2 border-accent"></div>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-6"><div class="w-4 h-4 rounded-full border-2 border-accent"></div></div>
             <h3 class="font-display text-lg font-bold text-primary mb-3">Passport Photos</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Two recent passport-size photographs on a white background.</p>
           </div>
-
           <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-              <div class="w-4 h-5 border-2 border-primary rounded-sm relative">
-                <div class="absolute bottom-0.5 left-0.5 right-0.5 h-px bg-primary"></div>
-              </div>
-            </div>
+            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6"><div class="w-4 h-5 border-2 border-primary rounded-sm relative"><div class="absolute bottom-0.5 left-0.5 right-0.5 h-px bg-primary"></div></div></div>
             <h3 class="font-display text-lg font-bold text-primary mb-3">Application Form</h3>
             <p class="text-gray-500 text-sm leading-relaxed">Completed TChefs admission application form, signed and dated.</p>
           </div>
-
         </div>
       </div>
     </section>
@@ -330,16 +235,11 @@
     <!-- INTAKES + FORM -->
     <section id="apply" class="py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-6">
-
         <div class="text-center mb-16">
           <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-4">Apply Today</p>
-          <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary">
-            Upcoming Intakes &amp; Application
-          </h2>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-primary">Upcoming Intakes &amp; Application</h2>
           <div class="w-16 h-px bg-accent mx-auto mt-6"></div>
-          <p class="mt-6 text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-            Secure your place at TChefs Culinary Institute by applying for the next available intake below.
-          </p>
+          <p class="mt-6 text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">Secure your place at TChefs Culinary Institute by applying for the next available intake below.</p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-10 items-start">
@@ -349,69 +249,66 @@
             <div>
               <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-6">2026 Intake Dates</p>
               <h3 class="font-display text-3xl font-bold text-white mb-10">Upcoming Intakes</h3>
-
               <div class="space-y-4">
-
                 <div class="flex items-center justify-between bg-white/10 hover:bg-white/15 transition rounded-xl px-6 py-5">
-                  <div>
-                    <p class="font-display font-bold text-white text-lg">January Intake</p>
-                    <p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 1 · Full-time &amp; Part-time</p>
-                  </div>
+                  <div><p class="font-display font-bold text-white text-lg">January Intake</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 1 · Full-time &amp; Part-time</p></div>
                   <span class="text-xs font-semibold bg-accent/20 text-accent border border-accent/30 px-3 py-1 rounded-full">Open</span>
                 </div>
-
                 <div class="flex items-center justify-between bg-white/10 hover:bg-white/15 transition rounded-xl px-6 py-5">
-                  <div>
-                    <p class="font-display font-bold text-white text-lg">May Intake</p>
-                    <p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 2 · Full-time &amp; Part-time</p>
-                  </div>
+                  <div><p class="font-display font-bold text-white text-lg">May Intake</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 2 · Full-time &amp; Part-time</p></div>
                   <span class="text-xs font-semibold bg-accent/20 text-accent border border-accent/30 px-3 py-1 rounded-full">Open</span>
                 </div>
-
                 <div class="flex items-center justify-between bg-white/10 hover:bg-white/15 transition rounded-xl px-6 py-5">
-                  <div>
-                    <p class="font-display font-bold text-white text-lg">September Intake</p>
-                    <p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 3 · Full-time &amp; Part-time</p>
-                  </div>
+                  <div><p class="font-display font-bold text-white text-lg">September Intake</p><p class="text-white/60 text-xs mt-0.5 tracking-wide">Term 3 · Full-time &amp; Part-time</p></div>
                   <span class="text-xs font-semibold bg-accent/20 text-accent border border-accent/30 px-3 py-1 rounded-full">Open</span>
                 </div>
-
               </div>
             </div>
-
             <div class="mt-10 pt-8 border-t border-white/20 space-y-3 text-sm text-white/70">
-              <div>
-                <p class="text-white/40 text-xs uppercase tracking-wider mb-0.5">Phone</p>
-                <p class="text-white">+254 704 019 505</p>
-              </div>
-              <div>
-                <p class="text-white/40 text-xs uppercase tracking-wider mb-0.5">Email</p>
-                <p class="text-white">info@tchefs.ac.ke</p>
-              </div>
+              <div><p class="text-white/40 text-xs uppercase tracking-wider mb-0.5">Phone</p><p class="text-white">+254 704 019 505</p></div>
+              <div><p class="text-white/40 text-xs uppercase tracking-wider mb-0.5">Email</p><p class="text-white">info@tchefs.ac.ke</p></div>
             </div>
           </div>
 
-          <!-- Application form -->
+          <!-- ═══════════════════════════════════════
+               APPLICATION FORM
+               Every field has a unique id so that
+               admissions.js can read the values.
+               ═══════════════════════════════════════ -->
           <div class="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm">
             <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-2">Get Started</p>
             <h3 class="font-display text-3xl font-bold text-primary mb-8">Apply Online</h3>
 
-            <form class="space-y-5" onsubmit="handleSubmit(event)">
+            <!-- Error message box — hidden until needed -->
+            <div
+              id="errorMsg"
+              class="hidden mb-5 bg-red-50 border border-red-200 rounded-xl px-5 py-3
+                     text-sm text-red-700 font-medium"
+            ></div>
+
+            <!-- The form — id="applyForm" is used by admissions.js -->
+            <form id="applyForm" class="space-y-5">
 
               <div class="grid sm:grid-cols-2 gap-4">
+
+                <!-- Full Name — id="appFullname" -->
                 <div class="flex flex-col gap-1.5">
                   <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Full Name</label>
                   <input
                     type="text"
+                    id="appFullname"
                     placeholder="e.g. Jane Wanjiku"
                     required
                     class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 transition"
                   />
                 </div>
+
+                <!-- Phone — id="appPhone" -->
                 <div class="flex flex-col gap-1.5">
                   <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Phone Number</label>
                   <input
                     type="tel"
+                    id="appPhone"
                     placeholder="+254 7XX XXX XXX"
                     required
                     class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 transition"
@@ -419,10 +316,12 @@
                 </div>
               </div>
 
+              <!-- Email — id="appEmail" -->
               <div class="flex flex-col gap-1.5">
                 <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Email Address</label>
                 <input
                   type="email"
+                  id="appEmail"
                   placeholder="you@example.com"
                   required
                   class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 transition"
@@ -430,23 +329,30 @@
               </div>
 
               <div class="grid sm:grid-cols-2 gap-4">
+
+                <!-- Programme — id="appProgramme" -->
                 <div class="flex flex-col gap-1.5">
                   <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Programme</label>
                   <select
+                    id="appProgramme"
                     required
                     class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 text-gray-700 transition"
                   >
                     <option value="" disabled selected>Select programme</option>
                     <option>Professional Culinary Arts</option>
-                    <option>Pastry & Bakery Arts</option>
+                    <option>Pastry &amp; Bakery Arts</option>
                     <option>Cookery Short Course</option>
                     <option>Certificate in Culinary Arts</option>
                     <option>Hospitality Management</option>
                   </select>
                 </div>
+
+                <!-- Preferred Intake — id="appIntake" -->
                 <div class="flex flex-col gap-1.5">
                   <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Preferred Intake</label>
                   <select
+                    id="appIntake"
+                    required
                     class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 text-gray-700 transition"
                   >
                     <option value="" disabled selected>Select intake</option>
@@ -457,9 +363,13 @@
                 </div>
               </div>
 
+              <!-- About yourself — id="appAbout" (optional) -->
               <div class="flex flex-col gap-1.5">
-                <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Tell Us About Yourself</label>
+                <label class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                  Tell Us About Yourself <span class="text-gray-300 font-normal">(optional)</span>
+                </label>
                 <textarea
+                  id="appAbout"
                   rows="4"
                   placeholder="Share your background, your passion for culinary arts, and why you want to join TChefs..."
                   class="w-full px-4 py-3.5 rounded-lg border border-gray-200 text-sm bg-gray-50 resize-none transition"
@@ -468,24 +378,23 @@
 
               <button
                 type="submit"
-                class="w-full bg-accent hover:bg-red-700 transition text-white font-semibold py-4 rounded-lg text-sm tracking-wide"
+                class="w-full bg-accent hover:bg-red-700 transition text-white
+                       font-semibold py-4 rounded-lg text-sm tracking-wide"
               >
                 Submit Application
               </button>
 
-              <p class="text-center text-xs text-gray-400">
-                Our team will contact you within 2 business days.
-              </p>
+              <p class="text-center text-xs text-gray-400">Our team will contact you within 2 business days.</p>
 
             </form>
 
-            <!-- Success message (hidden by default) -->
+            <!-- Success message — hidden until form is submitted -->
             <div id="successMsg" class="hidden mt-6 bg-green-50 border border-green-200 rounded-xl px-6 py-5 text-center">
               <p class="font-display font-bold text-green-800 text-lg mb-1">Application Received!</p>
               <p class="text-green-700 text-sm">Thank you — our admissions team will be in touch within 2 business days.</p>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>
@@ -495,17 +404,11 @@
       <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div>
           <p class="text-accent text-xs font-semibold tracking-[0.2em] uppercase mb-3">Questions?</p>
-          <h2 class="font-display text-4xl lg:text-5xl font-bold text-white leading-tight max-w-xl">
-            Not sure which programme is right for you?
-          </h2>
+          <h2 class="font-display text-4xl lg:text-5xl font-bold text-white leading-tight max-w-xl">Not sure which programme is right for you?</h2>
         </div>
         <div class="flex flex-col sm:flex-row gap-4 shrink-0">
-          <a href="contacts.html" class="bg-accent hover:bg-red-700 transition text-white font-semibold px-8 py-4 rounded-lg text-sm text-center">
-            Talk to an Advisor
-          </a>
-          <a href="courses.html" class="border border-white/30 hover:border-white transition text-white font-semibold px-8 py-4 rounded-lg text-sm text-center">
-            View All Courses
-          </a>
+          <a href="contacts.html" class="bg-accent hover:bg-red-700 transition text-white font-semibold px-8 py-4 rounded-lg text-sm text-center">Talk to an Advisor</a>
+          <a href="courses.html"  class="border border-white/30 hover:border-white transition text-white font-semibold px-8 py-4 rounded-lg text-sm text-center">View All Courses</a>
         </div>
       </div>
     </section>
@@ -517,45 +420,32 @@
           <div class="md:col-span-1">
             <p class="font-display text-2xl font-bold mb-1">TChefs.</p>
             <p class="text-xs text-accent tracking-widest uppercase mb-5">Culinary Institute</p>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              Empowering future culinary leaders through world-class culinary and hospitality education in Nairobi, Kenya.
-            </p>
+            <p class="text-gray-400 text-sm leading-relaxed">Empowering future culinary leaders through world-class culinary and hospitality education in Nairobi, Kenya.</p>
           </div>
           <div>
             <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">Quick Links</h3>
             <ul class="space-y-3 text-sm text-gray-300">
-              <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-              <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-              <li><a href="courses.html" class="hover:text-white transition">Courses</a></li>
+              <li><a href="index.html"      class="hover:text-white transition">Home</a></li>
+              <li><a href="about.html"      class="hover:text-white transition">About Us</a></li>
+              <li><a href="courses.html"    class="hover:text-white transition">Courses</a></li>
               <li><a href="admissions.html" class="hover:text-white transition">Admissions</a></li>
-              <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
+              <li><a href="gallery.html"    class="hover:text-white transition">Gallery</a></li>
             </ul>
           </div>
           <div>
             <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">Programmes</h3>
             <ul class="space-y-3 text-sm text-gray-300">
-              <li>Culinary Arts</li>
-              <li>Pastry & Bakery</li>
-              <li>Hospitality Management</li>
-              <li>Food Production</li>
-              <li>Bartending & Mixology</li>
+              <li>Culinary Arts</li><li>Pastry &amp; Bakery</li>
+              <li>Hospitality Management</li><li>Food Production</li>
+              <li>Bartending &amp; Mixology</li>
             </ul>
           </div>
           <div>
             <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-5">Contact</h3>
             <ul class="space-y-4 text-sm text-gray-300">
-              <li>
-                <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Phone</p>
-                +254 704 019 505
-              </li>
-              <li>
-                <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Email</p>
-                info@tchefs.ac.ke
-              </li>
-              <li>
-                <p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Location</p>
-                Westlands, Nairobi, Kenya
-              </li>
+              <li><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Phone</p>+254 704 019 505</li>
+              <li><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Email</p>info@tchefs.ac.ke</li>
+              <li><p class="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Location</p>Westlands, Nairobi, Kenya</li>
             </ul>
           </div>
         </div>
@@ -566,11 +456,10 @@
       </div>
     </footer>
 
-    <!-- Scroll to top -->
-    <button id="scrollTop" class="fixed bottom-8 right-6 bg-accent text-white w-11 h-11 rounded-full z-50 text-sm font-bold shadow-lg hover:bg-red-700 transition">
-      ↑
-    </button>
- <script src="script.js"></script>
+    <button id="scrollTop" class="fixed bottom-8 right-6 bg-accent text-white w-11 h-11 rounded-full z-50 text-sm font-bold shadow-lg hover:bg-red-700 transition">↑</button>
+
+    <!-- admissions.js handles the form + mobile menu + scroll-to-top -->
+    <script src="admissions.js"></script>
 
   </body>
 </html>
