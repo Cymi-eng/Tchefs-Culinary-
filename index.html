@@ -108,7 +108,7 @@
           </ul>
 
           <div class="hidden lg:flex items-center gap-4">
-            <a href="admissions.html" class="bg-accent hover:bg-red-700 transition text-white text-sm font-semibold px-6 py-2.5 rounded-lg">
+            <a href="#" class="bg-accent hover:bg-red-700 transition text-white text-sm font-semibold px-6 py-2.5 rounded-lg">
               Apply Now
             </a>
           </div>
@@ -132,7 +132,7 @@
             <li><a href="contacts.html" class="block py-2 px-3 rounded hover:bg-gray-50">Contact</a></li>
             <li><a href="login.html" class="block py-2 px-3 rounded hover:bg-gray-50">Login</a></li>
             <li class="pt-2">
-              <a href="admissions.html" class="block text-center bg-accent text-white py-3 rounded-lg font-semibold">Apply Now</a>
+              <a href="#" class="block text-center bg-accent text-white py-3 rounded-lg font-semibold">Apply Now</a>
             </li>
           </ul>
         </div>
@@ -435,6 +435,20 @@
       ↑
     </button>
 
-    <script src="script.js"></script>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+
+      // Scroll to top
+      const scrollBtn = document.getElementById('scrollTop');
+      window.addEventListener('scroll', () => {
+        scrollBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+        scrollBtn.style.alignItems = 'center';
+        scrollBtn.style.justifyContent = 'center';
+      });
+      scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
   </body>
 </html>
