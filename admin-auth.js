@@ -7,7 +7,7 @@
    know this key. Keep it private.
    ============================================================ */
 
-const SETUP_KEY = "TChefs@Setup2026"; // ← change this to your own secret key
+const SETUP_KEY = "password##.?"; // ← change this to your own secret key
 
 
 /* ── Shared helpers ──────────────────────────────────────────
