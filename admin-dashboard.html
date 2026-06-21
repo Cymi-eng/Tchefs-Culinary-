@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | TChefs Culinary Institute</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#0A2E5D", accent: "#E31B23" },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans:    ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fb; }
+
+    /* Sidebar slides in on mobile */
+    #sidebar { transition: transform 0.3s ease; }
+
+    /* Sidebar nav links */
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.65);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+    }
+    .nav-link:hover  { background: rgba(255,255,255,0.1); color: #fff; }
+    .nav-link.active { background: rgba(255,255,255,0.15); color: #fff; }
+
+    /* Tab panels — only the active one is visible */
+    .tab-panel        { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* Mobile overlay behind sidebar */
+    #overlay { display: none; }
+    #overlay.open { display: block; }
+
+    /* Table styles */
+    th { font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+         text-transform: uppercase; color: #9ca3af;
+         padding: 12px 16px; text-align: left; }
+    td { padding: 13px 16px; font-size: 13px; color: #374151;
+         border-top: 1px solid #f3f4f6; }
+    tr:hover td { background: #fafafa; }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+<!-- Session guard — redirect to login if not logged in -->
+<script>
+  if (!localStorage.getItem("tchefs_admin_session")) {
+    window.location.href = "admin-login.html";
+  }
+</script>
+
+<div class="flex min-h-screen">
+
+  <!-- ═══════════════════════════
+       SIDEBAR
+       ═══════════════════════════ -->
+  <aside
+    id="sidebar"
+    class="fixed lg:static inset-y-0 left-0 z-40 w-60
+           bg-primary flex flex-col -translate-x-full lg:translate-x-0"
+  >
+
+    <!-- Logo -->
+    <div class="px-5 py-6 border-b border-white/10">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/official-top-chef-logo.webp" alt="TChefs" class="h-10 w-auto" />
+        <div>
+          <p class="font-display text-lg font-bold text-white leading-none">TChefs.</p>
+          <p class="text-xs text-accent tracking-widest uppercase mt-0.5">Admin Portal</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Admin name + role in sidebar -->
+    <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3">
+      <div
+        id="sidebarInitial"
+        class="w-9 h-9 rounded-full bg-accent flex items-center justify-center
+               font-bold text-white text-sm flex-shrink-0"
+      >A</div>
+      <div class="overflow-hidden">
+        <p id="sidebarName" class="text-white text-sm font-semibold truncate">Admin</p>
+        <p id="sidebarRole" class="text-white/40 text-xs truncate">—</p>
+      </div>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="flex-1 px-3 py-4 space-y-1">
+      <button class="nav-link active" onclick="showTab('overview')"     id="nav-overview">Overview</button>
+      <button class="nav-link"        onclick="showTab('students')"     id="nav-students">Students</button>
+      <button class="nav-link"        onclick="showTab('applications')" id="nav-applications">Applications</button>
+    </nav>
+
+    <!-- Logout -->
+    <div class="px-3 py-4 border-t border-white/10">
+      <button onclick="logout()" class="nav-link hover:bg-red-600/30 hover:text-white">
+        Logout
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- Dark overlay on mobile -->
+  <div id="overlay" onclick="closeSidebar()" class="fixed inset-0 z-30 bg-black/40 lg:hidden"></div>
+
+  <!-- ═══════════════════════════
+       MAIN CONTENT
+       ═══════════════════════════ -->
+  <div class="flex-1 flex flex-col min-w-0">
+
+    <!-- Top bar -->
+    <header class="bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between sticky top-0 z-20">
+      <div class="flex items-center gap-4">
+        <!-- Hamburger — mobile only -->
+        <button onclick="openSidebar()" class="lg:hidden flex flex-col gap-1.5 p-1">
+          <span class="block w-5 h-0.5 bg-gray-600"></span>
+          <span class="block w-5 h-0.5 bg-gray-600"></span>
+          <span class="block w-4 h-0.5 bg-gray-600"></span>
+        </button>
+        <!-- Page title — updated when switching tabs -->
+        <p id="pageTitle" class="font-display font-bold text-primary text-lg">Overview</p>
+      </div>
+      <!-- Avatar -->
+      <div
+        id="headerInitial"
+        class="w-9 h-9 rounded-full bg-accent flex items-center justify-center
+               font-bold text-white text-sm"
+      >A</div>
+    </header>
+
+    <!-- Tab panels -->
+    <main class="flex-1 p-6 space-y-6">
+
+      <!-- ═══════════════════════════
+           TAB: OVERVIEW
+           ═══════════════════════════ -->
+      <div id="tab-overview" class="tab-panel active space-y-6">
+
+        <!-- Welcome banner -->
+        <div class="bg-primary rounded-2xl p-8">
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-2">Admin Portal</p>
+          <h2 class="font-display text-3xl font-bold text-white mb-1">
+            Welcome, <span id="welcomeName">Admin</span>!
+          </h2>
+          <p class="text-white/60 text-sm">Here's a snapshot of TChefs Culinary Institute.</p>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs text-gray-400 uppercase tracking-wider mb-2">Total Students</p>
+            <p id="statStudents" class="font-display text-3xl font-bold text-primary">0</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs text-gray-400 uppercase tracking-wider mb-2">Applications</p>
+            <p id="statApplications" class="font-display text-3xl font-bold text-primary">0</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-gray-100 p-6">
+            <p class="text-xs text-gray-400 uppercase tracking-wider mb-2">Pending Review</p>
+            <p id="statPending" class="font-display text-3xl font-bold text-accent">0</p>
+          </div>
+
+        </div>
+
+        <!-- Recent applications preview -->
+        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+          <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+            <p class="font-semibold text-primary text-sm">Recent Applications</p>
+            <button onclick="showTab('applications')" class="text-xs text-accent font-semibold">See all →</button>
+          </div>
+          <div id="recentApplications" class="divide-y divide-gray-50"></div>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════
+           TAB: STUDENTS
+           ═══════════════════════════ -->
+      <div id="tab-students" class="tab-panel space-y-5">
+
+        <!-- Search + filter bar -->
+        <div class="bg-white rounded-2xl border border-gray-100 px-5 py-4 flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name or email…"
+            oninput="filterStudents()"
+            class="flex-1 px-4 py-2.5 rounded-lg border border-gray-200 text-sm bg-gray-50
+                   focus:outline-none focus:border-primary w-full sm:w-auto"
+          />
+          <button
+            onclick="exportStudentsCSV()"
+            class="flex-shrink-0 bg-primary hover:bg-blue-900 transition text-white
+                   text-sm font-semibold px-5 py-2.5 rounded-lg"
+          >
+            Export CSV
+          </button>
+        </div>
+
+        <!-- Students table -->
+        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Course</th>
+                </tr>
+              </thead>
+              <tbody id="studentTableBody"></tbody>
+            </table>
+          </div>
+          <!-- Empty state -->
+          <div id="studentEmpty" class="hidden px-6 py-12 text-center text-sm text-gray-400">
+            No students found.
+          </div>
+          <!-- Row count -->
+          <div class="px-6 py-3 border-t border-gray-100 text-xs text-gray-400">
+            <span id="studentCount">0 students</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ═══════════════════════════
+           TAB: APPLICATIONS
+           ═══════════════════════════ -->
+      <div id="tab-applications" class="tab-panel space-y-5">
+
+        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+          <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+            <p class="font-semibold text-primary text-sm">Online Applications</p>
+            <button onclick="exportApplicationsCSV()" class="text-xs bg-primary text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-900 transition">
+              Export CSV
+            </button>
+          </div>
+
+          <!-- Applications table -->
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Programme</th>
+                  <th>Intake</th>
+                  <th>Applied On</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="applicationTableBody"></tbody>
+            </table>
+          </div>
+
+          <!-- Empty state -->
+          <div id="applicationEmpty" class="hidden px-6 py-12 text-center text-sm text-gray-400">
+            No applications received yet.
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
