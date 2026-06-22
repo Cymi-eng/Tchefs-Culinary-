@@ -95,7 +95,21 @@ This project currently uses Tailwind CSS via CDN.
 No external CSS file is required during the initial development phase.
 
 ---
+ ## Product Installation 
 
+1. Clone the Repository
+
+git clone [https://github.com/Cymi-eng/Tchefs-Culinary-](https://github.com/Cymi-eng/Tchefs-Culinary-.git)
+
+cd Tchefs-Culinary-
+
+**Open the project:**
+Simply open the index.html file in your preferred browser to view the current build.
+
+
+Tchefs-Culinary- was tested for compatibility across all browsers
+
+The layout and styling remain responsive and consistent across modern browsers.
 # Pages
 
 ## Home
