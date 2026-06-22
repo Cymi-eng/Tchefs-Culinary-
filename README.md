@@ -24,13 +24,10 @@ The website is being developed using a mobile-first approach and follows modern 
 * Testimonials
 * Contact Form
 * Login Page
-* Registration Page
 * Student Portal
 * Authentication System
-* Course Search
 * Fetch API Integration
 * Local Storage Support
-* Dark Mode Support
 * Admin Dashboard
 
 ---
@@ -50,12 +47,17 @@ The website is being developed using a mobile-first approach and follows modern 
 tchefs-website/
 │
 ├── README.md
-├── index.html
+├── License
+
 │
 ├── js/
-│   ├── app.js
+│   ├── script.js
 │   ├── auth.js
 │   ├── courses.js
+│   ├── login.js
+│   ├── admin.js
+│   ├── dashboard.js
+│   ├── signup.js
 │
 ├── assets/
 │   ├── images/
@@ -65,11 +67,11 @@ tchefs-website/
 ├── pages/
 │   ├── about.html
 │   ├── courses.html
+│   ├── Admissions.html
 │   ├── gallery.html
 │   ├── contact.html
 │   ├── login.html
-│   └── register.html
-│
+
 
 
 # Design Goals
@@ -119,16 +121,12 @@ Contains:
 * Hero Section
 * About Preview
 * Featured Courses
-* Testimonials
-* Gallery Preview
-
 ---
 
 ## About
 
 Contains:
 
-* School History
 * Mission
 * Vision
 * Core Values
@@ -191,7 +189,6 @@ Contains:
 
 # Future Enhancements
 
-* Student Dashboard
 * Online Course Applications
 * Online Payments
 * Admin Panel
