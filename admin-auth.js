@@ -2,12 +2,8 @@
    admin-auth.js — TChefs Admin Authentication
    Used by: admin-setup.html, admin-login.html
 
-   The setup key — change this to something only you know.
-   Anyone who wants to create the first admin account must
-   know this key. Keep it private.
-   ============================================================ */
 
-const SETUP_KEY = "password##.?"; // ← change this to your own secret key
+const SETUP_KEY = "password##.?"; 
 
 
 /* ── Shared helpers ──────────────────────────────────────────

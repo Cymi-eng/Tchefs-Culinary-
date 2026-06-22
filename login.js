@@ -96,7 +96,7 @@ document.getElementById("loginForm")?.addEventListener("submit", function (e) {
   }, 600);
 });
 
-/* ── Export for login.test.js (Node.js) ──────────────────── */
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { validateLogin, getStudent, setSession };
 }

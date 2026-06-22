@@ -1,21 +1,11 @@
 {
-  "name": "tchefs",
+  "name": "tchefs-culinary-institute",
   "version": "1.0.0",
-  "description": "TChefs Culinary Institute Website is a modern educational platform that promotes culinary training programs, student success stories, admissions information, and institutional services.",
-  "main": "courses.js",
+  "description": "TChefs Culinary Institute — test suite",
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cymi-eng/Tchefs-Culinary-.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Cymi-eng/Tchefs-Culinary-/issues"
-  },
-  "homepage": "https://github.com/Cymi-eng/Tchefs-Culinary-#readme"
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }

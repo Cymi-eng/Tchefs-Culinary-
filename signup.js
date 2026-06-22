@@ -144,7 +144,7 @@ document.getElementById("signupForm")?.addEventListener("submit", function (e) {
   setTimeout(() => { window.location.href = "login.html"; }, 2000);
 });
 
-/* ── Export for signup.test.js (Node.js) ─────────────────── */
+
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { validateSignup, getPasswordStrength, getStudent, saveStudent };
 }
